@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date_ist": "2026-11-25",
   "previous_deployed_commit": "c4f357e09ae28b0e4c66ae5a7c60c6531f7d1817",
-  "ui_source_commit": "50dcab16fa2877ab295a5b09a7cf9c988300cc13",
+  "ui_source_commit": "d1016317df87e024b638847c44623f196d559c54",
   "evidenceworks_source_commit": "a4f467784738dc44b0f5c558b21ee3d58f7225ea",
   "job_merged_commit": "54c18bbe8000801dfd76064bb35b4ef5d862aa55",
   "healthcare_merged_commit": "d02073c142717e91f214b344665ca8cb9ce3b85b",
