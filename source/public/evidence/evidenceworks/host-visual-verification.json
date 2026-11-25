@@ -1,0 +1,30 @@
+{
+  "approval": {
+    "actor": "synthetic-test:visual-harness",
+    "approval_kind": "synthetic_test",
+    "approved_utc": "2026-11-24T16:04:06.606220+00:00",
+    "environment_sha256": "74528596cbc5f16bd347832b50ad73db92ae1ce0ae79642e75167e7c06b22354",
+    "image_sha256": "112d9c6c9e365ab8d3a494ff99f3df300c4ebc139bf0282d17324412092a8c34",
+    "schema_version": 1,
+    "scope": "host_visual_20261124_213406"
+  },
+  "capture_transport": "loopback-http",
+  "comparisons": {
+    "layout-defect": {
+      "changed_fraction": 0.3443558114035088,
+      "changed_pixels": 251242,
+      "run_id": "731df9ef873d4127bfe1a73b41b31116",
+      "status": "FAIL",
+      "total_pixels": 729600
+    },
+    "repeat": {
+      "changed_fraction": 0.0,
+      "changed_pixels": 0,
+      "run_id": "8c7ab559a5e241ce8c62a486493fd6bb",
+      "status": "PASS",
+      "total_pixels": 729600
+    }
+  },
+  "layout_numeric_still_correct": true,
+  "status": "PASS"
+}

@@ -1,0 +1,9 @@
+{
+  "actor": "synthetic-test:visual-harness",
+  "approval_kind": "synthetic_test",
+  "approved_utc": "2026-11-24T16:04:06.606220+00:00",
+  "environment_sha256": "74528596cbc5f16bd347832b50ad73db92ae1ce0ae79642e75167e7c06b22354",
+  "image_sha256": "112d9c6c9e365ab8d3a494ff99f3df300c4ebc139bf0282d17324412092a8c34",
+  "schema_version": 1,
+  "scope": "host_visual_20261124_213406"
+}

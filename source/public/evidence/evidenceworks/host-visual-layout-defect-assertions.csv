@@ -1,0 +1,2 @@
+assertion,status,reason
+visual_delta,FAIL,pixel difference above threshold

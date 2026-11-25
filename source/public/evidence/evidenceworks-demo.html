@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<title>Synthetic expense dashboard</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#eef3f7;color:#122b3d;font:17px Arial,sans-serif}
+main{max-width:888px;margin:42px auto;padding:32px;background:white;border:1px solid #c4d2dc;border-radius:12px}
+h1{font-size:32px;margin:0 0 10px}
+.controls{display:flex;gap:12px;padding:22px 0;align-items:center;flex-wrap:wrap}
+select,button{font:inherit;background:white;color:#122b3d;border:1px solid #718697;border-radius:5px;padding:7px 12px}
+button:focus-visible,select:focus-visible{outline:3px solid #ab4a00;outline-offset:2px}
+section{padding:20px;background:#eef6fc;border-left:5px solid #22739f;margin:18px 0}
+strong{font-size:34px;display:block;margin-top:8px}
+output{display:block;margin:8px 0}
+.chart{padding:10px 0;display:grid;gap:8px}
+.bar-row{display:grid;grid-template-columns:85px 1fr 85px;align-items:center;gap:10px}
+.bar{height:13px;background:#237aa3;border-radius:2px;max-width:100%}
+.layout-defect section{height:28px;padding:8px 20px;overflow:hidden;background:#ffdbb2}
+table{border-collapse:collapse}td,th{padding:8px 14px;text-align:left;border-bottom:1px solid #cedae4}
+[hidden]{display:none!important}
+</style>
+<main>
+  <h1>Synthetic expense dashboard</h1>
+  <p>Eligible expenses and signed adjustments by population and reporting month.</p>
+  <div class="controls">
+    <label for="population">Population</label>
+    <select id="population"><option value="standard">Standard</option><option value="high_needs">High needs</option><option value="empty">Empty</option><option value="error">Error simulation</option></select>
+    <label for="month">Month</label>
+    <select id="month"><option>2026-04</option><option>2026-03</option></select>
+    <button id="reset">Reset</button>
+    <button id="export">Export CSV</button>
+  </div>
+  <output id="context" aria-live="polite"></output>
+  <p id="status" role="status"></p>
+  <section id="overview">
+    <div>Total eligible expense <strong id="expense"></strong></div>
+    <p>Selected rows <span id="count"></span></p>
+  </section>
+  <div id="chart" class="chart" role="img" aria-label="Monthly total expense chart"></div>
+  <button id="drill" aria-controls="detail" aria-expanded="false">Show transactions</button>
+  <table id="detail" hidden><caption>Eligible transactions for active context</caption><thead><tr><th>ID</th><th>Date</th><th>Signed expense</th></tr></thead><tbody></tbody></table>
+</main>
+<script>
+"use strict";
+const $=s=>document.querySelector(s);
+const params=new URLSearchParams(location.search);
+const variant=params.get("variant")==="target"?"target":"legacy";
+const bug=variant==="target"?params.get("defect"):null;
+if(bug==="layout") $("main").classList.add("layout-defect");
+const rows=[
+  ["a1","standard","2026-03-02",6000],["a2","standard","2026-04-01",9000],
+  ["a3","standard","2026-04-19",1200],["a4","standard","2026-04-30",-200],
+  ["a6","high_needs","2026-03-31",3000],["a7","high_needs","2026-04-01",2250],
+  ["a8","high_needs","2026-04-08",2750]
+];
+const dollars=cents=>"$"+(cents/100).toFixed(2);
+function selection(pop,ym){return rows.filter(r=>r[1]===pop&&r[2].startsWith(ym));}
+const sum=rs=>rs.reduce((n,r)=>n+r[3],0);
+function render(){
+  const pop=$("#population").value, ym=$("#month").value;
+  const selected=selection(pop,ym);
+  const error=pop==="error", empty=selected.length===0;
+  $("#context").textContent=pop+" / "+ym;
+  $("#status").textContent=error?"Unable to load synthetic data.":empty?"No rows for this selection.":"";
+  $("#overview").hidden=empty; $("#chart").hidden=empty;
+  $("#drill").disabled=empty; $("#export").disabled=empty;
+  $("#detail").hidden=true; $("#drill").setAttribute("aria-expanded","false");
+  if(empty){$("#expense").textContent="";$("#count").textContent="";$("#chart").replaceChildren();$("#detail tbody").replaceChildren();return;}
+  const effective=bug==="filter"?selection("standard",ym):selected;
+  $("#expense").textContent=dollars(sum(effective)+(bug==="numeric"?100:0));
+  $("#count").textContent=String(effective.length);
+  $("#chart").replaceChildren();
+  for(const period of ["2026-03","2026-04"]){
+    const amount=sum(selection(pop,period));
+    const item=document.createElement("div"); item.className="bar-row";
+    const label=document.createElement("span");label.textContent=period;
+    const bar=document.createElement("span");bar.className="bar";bar.style.width=(amount/100)+"%";
+    const number=document.createElement("span");number.textContent=dollars(amount);
+    item.append(label,bar,number);$("#chart").append(item);
+  }
+  $("#detail tbody").replaceChildren();
+  for(const r of selected){
+    const tr=document.createElement("tr");tr.dataset.cents=r[3];
+    for(const value of [r[0],r[2],dollars(r[3])]){const td=document.createElement("td");td.textContent=value;tr.append(td);}
+    $("#detail tbody").append(tr);
+  }
+}
+for(const id of ["population","month"]) $("#"+id).addEventListener("change",render);
+$("#reset").addEventListener("click",()=>{$("#population").value="standard";$("#month").value="2026-04";render();});
+$("#drill").addEventListener("click",()=>{const t=$("#detail");t.hidden=!t.hidden;$("#drill").setAttribute("aria-expanded",String(!t.hidden));});
+$("#export").addEventListener("click",()=>{
+  const pop=$("#population").value,ym=$("#month").value;
+  const csv="population,month,eligible_expense_cents\n"+pop+","+ym+","+sum(selection(pop,ym))+"\n";
+  const url=URL.createObjectURL(new Blob([csv],{type:"text/csv"}));
+  const a=document.createElement("a");a.href=url;a.download="synthetic-expense.csv";a.click();
+  setTimeout(()=>URL.revokeObjectURL(url),100);
+});
+render();
+</script>
+</html>

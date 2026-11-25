@@ -1,0 +1,152 @@
+{
+  "assertions": [
+    {
+      "assertion": "claim_1.quote_span",
+      "reason": "mapped quote verified",
+      "status": "PASS"
+    },
+    {
+      "assertion": "claim_1.metric",
+      "reason": "metric identity",
+      "status": "PASS"
+    },
+    {
+      "assertion": "claim_1.context.month",
+      "reason": "context matches",
+      "status": "PASS"
+    },
+    {
+      "assertion": "claim_1.context.population",
+      "reason": "context matches",
+      "status": "PASS"
+    },
+    {
+      "assertion": "claim_1.unit",
+      "reason": "unit matches",
+      "status": "PASS"
+    },
+    {
+      "actual": "100.00",
+      "assertion": "claim_1.number",
+      "expected": "100.00",
+      "numeric": true,
+      "reason": "within contract tolerance",
+      "status": "PASS"
+    },
+    {
+      "assertion": "claim_2.quote_span",
+      "reason": "mapped quote verified",
+      "status": "PASS"
+    },
+    {
+      "assertion": "claim_2.metric",
+      "reason": "metric identity",
+      "status": "PASS"
+    },
+    {
+      "assertion": "claim_2.context.month",
+      "reason": "context matches",
+      "status": "PASS"
+    },
+    {
+      "assertion": "claim_2.context.population",
+      "reason": "context matches",
+      "status": "PASS"
+    },
+    {
+      "assertion": "claim_2.unit",
+      "reason": "unit matches",
+      "status": "PASS"
+    },
+    {
+      "actual": "120.00",
+      "assertion": "claim_2.number",
+      "expected": "100.00",
+      "numeric": true,
+      "reason": "outside contract tolerance",
+      "status": "FAIL"
+    },
+    {
+      "assertion": "consistency",
+      "reason": "contradictory assertions for one metric and context",
+      "status": "FAIL"
+    }
+  ],
+  "created_utc": "2026-11-24T15:28:33.735470+00:00",
+  "details": {
+    "answer_sha256": "5fd098e452185ee060ed153bd8cf958fccd486ec38bb92782e965398ae68040b",
+    "backend": "decimal",
+    "canonical_dataset_contract_sha256": "1f06eb09849d1dd6a7bbaddd785c528cdb07aff71014957183674a028d57da34",
+    "case": "contradictory",
+    "case_contract_sha256": "93d93b41cfb237d70486a5212831cf00c7d4aeae5f4db77f2c14b9d262234755",
+    "context": {
+      "month": "2026-04",
+      "population": "standard"
+    },
+    "grain": [
+      "population",
+      "month"
+    ],
+    "input_hashes": {
+      "expense": "9e46152d484adbfca8d1a7b5f5ba43ade7754c8764e20780222e437bedf2f0bd",
+      "revenue": "56506f25ff27e59fb1ba71725b0e0be1ec38af50104ba4bb11e6db63993c68f4"
+    },
+    "mapping_sha256": "f3c39902f1ee08b979478a522c5de3555452f0cfa15aed2631bf7bfed9a60343",
+    "metric": "total_expense",
+    "metric_contract_sha256": "440a13959e9bb009a25784cd182976da2aaadc1553c69ba1ef4b65f64e0b7fca",
+    "metric_version": "1.0.0",
+    "reference": {
+      "components": {
+        "expense": {
+          "matching_rows": 3,
+          "non_null_rows": 3,
+          "period": "current",
+          "value": "100.00"
+        }
+      },
+      "reason": "reference calculated",
+      "status": "PASS",
+      "unit": "USD",
+      "value": "100.00"
+    },
+    "snapshot_sha256": "eb8bb7a5e8be40213877ae3a005f6681caa180535e6c4077dbc3f134c9cc326b",
+    "sources": {
+      "ledger": "a79f564c3c72c88881485f7d8bc109b0c2c13f63245d218f0bca20d676a51b37"
+    }
+  },
+  "environment": {
+    "packages": {
+      "duckdb": null,
+      "pillow": null,
+      "playwright": null,
+      "pyarrow": null,
+      "pydantic": "2.13.5",
+      "pytest": "9.1.1",
+      "pyyaml": "6.0.3"
+    },
+    "python": "3.13.15",
+    "system": "Windows-11-10.0.26200-SP0"
+  },
+  "kind": "answer",
+  "result_sha256": "9cef01d0d95f16f3ee2409643d59a258b41527b37b5ba67c1f68b4485adf0fa6",
+  "run_id": "09a57203473947ceb6f079437524d1fc",
+  "schema_version": 1,
+  "summary": {
+    "assessable": 13,
+    "assessed_coverage": 1.0,
+    "counts": {
+      "ERROR": 0,
+      "FAIL": 2,
+      "INCONCLUSIVE": 0,
+      "NOT_APPLICABLE": 0,
+      "PASS": 11,
+      "REVIEW": 0
+    },
+    "exit_code": 1,
+    "in_scope": 13,
+    "numeric_accuracy": 0.5,
+    "numeric_assessable": 2,
+    "state": "COMPLETED_WITH_FAILURES",
+    "unresolved": []
+  }
+}

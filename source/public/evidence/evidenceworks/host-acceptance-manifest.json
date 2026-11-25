@@ -1,0 +1,142 @@
+{
+  "artifacts": {
+    "host-answer-abstention.json": "db2c704faba277fdf003ba28b4c3d003e606041ae8f37023fad7192498ef5388",
+    "host-answer-ambiguous.json": "c52d185a1cf42000e4c86ccdda5e7ac68bc1435f3fc530d93c3eb296347b7ab7",
+    "host-answer-causal.json": "60da724684f557895717efe8caffa0734c6bceac659e91a1b3d3422ccab88754",
+    "host-answer-contradictory.json": "8814a14ab6c9d58d91d07f99312937010a2cb87f47d07044e0f590e092bebd23",
+    "host-answer-invented_evidence.json": "69e3253cfed23c323e7101c4f6ec9588a065269c9164f111869fd152827e7dce",
+    "host-answer-missing_caveat.json": "daf7ab2117ffbdd7a26622b0540041c08b6dcdd6f3ebc19657a0112c641a963d",
+    "host-answer-overconfidence.json": "e097c143c1c8055f65ea150cf5466829a4a3e0af99a497724d5e6159edac8e07",
+    "host-answer-right.json": "62098190e4e67b43282e984cc7b506bae3e8285f0065915aadf7286fc58a420c",
+    "host-answer-wrong_amount.html": "53bce51c28b61a76741a78a7fd972b26802d20a46ef6e9bd0c1a99c41f8633a9",
+    "host-answer-wrong_amount.json": "4655c181ef86d5d4044f5840a045cbd3196007862670286b1d210245eedda3a2",
+    "host-answer-wrong_period.json": "850c301fa6592a8b3e67e29257e80c6767359b14e56af3adacd7406fb5a2429d",
+    "host-answer-wrong_population.json": "3bcb8998af41109d690bf1894de65497c8a272561c72fe192226fdd605558f3a",
+    "host-answer-wrong_unit.json": "7ea5f6c0c165b7c5ad548d5e458c53f942f7d4797e5e5378e7ed601e4112e159",
+    "host-dashboard-bad.html": "ecc53cd838ef861e675e3051714fbc92dbba4289e8de96fd88688e96fa668e24",
+    "host-dashboard-bad.json": "0d022a5b23b7e25ed5f7af3b60aade20d0103b477a33368115bd1f8a45f0e2da",
+    "host-dashboard-good.json": "071262a8e6291ddc4d1b248d7807b565decbccf8939d9477b1fb34c8f08d64f9",
+    "host-demo-assertions.csv": "bebdb7193f67b74015c3db9493bed573b5b95c720ac326d0d4de80f8afb2fb58",
+    "host-demo-report.html": "9b31de9ca324adef4f6a0431cc08471719c1c8f49d9014e2790aa1d31ce1ceab",
+    "host-demo-report.json": "6b91d27ae774fe699b372d34418342cc05cf1dd573e557c0c94d1d8c1e86c756",
+    "host-tests.xml": "79b51982335fd6eb32a643cd6993f04ade7bb26c23c8c30e4727f115c55cea34",
+    "managed-real-loopback-recheck.json": "7ecb0caf85333db155188ff4a646473e1c2a0c1851592317147ef16fde046245"
+  },
+  "backend": "duckdb",
+  "demo": {
+    "command": [
+      "python.exe",
+      "-I",
+      "scripts/network_denied_run.py",
+      "--workspace",
+      "<host-evidence-directory>\\workspace",
+      "demo",
+      "--backend",
+      "duckdb"
+    ],
+    "contract_hashes": {
+      "dataset_contract_sha256": "33886e9c635dadaeceb8368da023143b4b4b974b7c49643a9040477ea14a6912",
+      "metric_contract_sha256": "440a13959e9bb009a25784cd182976da2aaadc1553c69ba1ef4b65f64e0b7fca"
+    },
+    "elapsed_ms": 5540.625,
+    "environment": {
+      "packages": {
+        "duckdb": "1.4.4",
+        "pillow": "13.0.0",
+        "playwright": null,
+        "pyarrow": null,
+        "pydantic": "2.13.5",
+        "pytest": "9.1.1",
+        "pyyaml": "6.0.3"
+      },
+      "python": "3.13.15",
+      "system": "Windows-11-10.0.26200-SP0"
+    },
+    "exit_code": 0,
+    "input_manifest": {
+      "expense": {
+        "format": ".csv",
+        "rows": 15,
+        "sha256": "9e46152d484adbfca8d1a7b5f5ba43ade7754c8764e20780222e437bedf2f0bd"
+      },
+      "revenue": {
+        "format": ".csv",
+        "rows": 11,
+        "sha256": "56506f25ff27e59fb1ba71725b0e0be1ec38af50104ba4bb11e6db63993c68f4"
+      }
+    },
+    "report_sha256": "6b91d27ae774fe699b372d34418342cc05cf1dd573e557c0c94d1d8c1e86c756",
+    "result": {
+      "elapsed_ms": 5185.753,
+      "report": "host-demo-report.json",
+      "result_sha256": "f8f7dfc7abd004105292357e7a3ee4197aab3006843c847a7c7bad6dc0f5a9b5",
+      "run_id": "980832d3c63944f18e49d49c74b403a6",
+      "summary": {
+        "assessable": 38,
+        "assessed_coverage": 1.0,
+        "counts": {
+          "ERROR": 0,
+          "FAIL": 0,
+          "INCONCLUSIVE": 0,
+          "NOT_APPLICABLE": 0,
+          "PASS": 38,
+          "REVIEW": 0
+        },
+        "exit_code": 0,
+        "in_scope": 38,
+        "numeric_accuracy": null,
+        "numeric_assessable": 0,
+        "state": "COMPLETED",
+        "unresolved": []
+      }
+    }
+  },
+  "historical_compatibility_evidence": "acceptance-manifest.json",
+  "later_browser_evidence": "managed-real-loopback-recheck.json",
+  "network_probe": "Python audit wrapper denied before DNS",
+  "original_sha256": {
+    "acceptance-manifest.json": "4490b0dfbb322811aecdf9ebc76dab4d89995f447447618e96667bcbfb23c657",
+    "tests.xml": "a62503b6dc2acbb0a6b879094c3669a38227781935298a4b0cb7f32314f4c347"
+  },
+  "os": "Windows-11-10.0.26200-SP0",
+  "package_source": {
+    "commit": "66174086dc49ea15c8c056e47b72a40cf25fd386",
+    "dirty": false
+  },
+  "python": "3.13.15",
+  "scope": {
+    "browser_part_of_host_run": false,
+    "mutation_backend": "decimal",
+    "parquet_rows": 1,
+    "top_level_numeric_claims": 0,
+    "top_level_scenario_checks": {
+      "answer_outcomes": 12,
+      "dashboard_sets": 2,
+      "reference": 24
+    }
+  },
+  "source": {
+    "commit": "b2d4b77ca55e7e9ff6f59bc71ac189962b3972f7",
+    "dirty": false
+  },
+  "test_evidence": "host-tests.xml",
+  "tests": {
+    "command": [
+      "python.exe",
+      "-m",
+      "pytest",
+      "-q",
+      "--junitxml=<host-evidence-directory>\\tests.xml"
+    ],
+    "counts": {
+      "errors": 0,
+      "failures": 0,
+      "passed": 52,
+      "skipped": 0,
+      "tests": 52
+    },
+    "elapsed_ms": 94975.9,
+    "exit_code": 0,
+    "skip_reasons": []
+  }
+}

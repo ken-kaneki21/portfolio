@@ -1,0 +1,4 @@
+* text=auto
+public/** -text
+*.pdf binary
+*.png binary

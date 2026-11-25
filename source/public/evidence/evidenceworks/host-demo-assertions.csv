@@ -1,0 +1,39 @@
+assertion,status,reason
+G01,PASS,90 + 12 - 2
+G02,PASS,60
+G03,PASS,22.50 + 27.50
+G04,PASS,30
+G05,PASS,'-1
+G06,PASS,1
+G07,PASS,5
+G08,PASS,selected missing amount
+G09,PASS,no selected expenses
+G10,PASS,May first boundary
+G11,PASS,100 * 100 / (100 + 100)
+G12,PASS,100 * 60 / 100
+G13,PASS,100 * 50 / 80
+G14,PASS,zero revenue
+G15,PASS,100 / 32 = 3.125 HALF_UP
+G16,PASS,'-100 / 32 = -3.125 HALF_UP
+G17,PASS,missing revenue
+G18,PASS,(50 - 60) * 100 / 60
+G19,PASS,50 - 60
+G20,PASS,62.50 - 30
+G21,PASS,(62.5 - 30) * 100 / 30
+G22,PASS,30 - 20 across year
+G23,PASS,(30 - 20) * 100 / 20
+G24,PASS,prior-period absence
+answer.right,PASS,agrees with authored scenario label
+answer.wrong_population,PASS,agrees with authored scenario label
+answer.wrong_amount,PASS,agrees with authored scenario label
+answer.wrong_period,PASS,agrees with authored scenario label
+answer.wrong_unit,PASS,agrees with authored scenario label
+answer.invented_evidence,PASS,agrees with authored scenario label
+answer.contradictory,PASS,agrees with authored scenario label
+answer.overconfidence,PASS,agrees with authored scenario label
+answer.abstention,PASS,agrees with authored scenario label
+answer.causal,PASS,agrees with authored scenario label
+answer.missing_caveat,PASS,agrees with authored scenario label
+answer.ambiguous,PASS,agrees with authored scenario label
+dashboard.good,PASS,dashboard independent comparison categories
+dashboard.bad,PASS,dashboard independent comparison categories
