@@ -1,0 +1,121 @@
+{
+  "assertions": [
+    {
+      "assertion": "claim_1.quote_span",
+      "reason": "mapped quote verified",
+      "status": "PASS"
+    },
+    {
+      "assertion": "claim_1.evidence",
+      "reason": "evidence source and span verified",
+      "source_id": "ledger",
+      "status": "PASS"
+    },
+    {
+      "assertion": "claim_1.metric",
+      "reason": "metric identity",
+      "status": "PASS"
+    },
+    {
+      "assertion": "claim_1.context.month",
+      "reason": "context matches",
+      "status": "PASS"
+    },
+    {
+      "assertion": "claim_1.context.population",
+      "reason": "context matches",
+      "status": "PASS"
+    },
+    {
+      "assertion": "claim_1.unit",
+      "reason": "unit matches",
+      "status": "PASS"
+    },
+    {
+      "actual": "100.00",
+      "assertion": "claim_1.number",
+      "expected": "100.00",
+      "numeric": true,
+      "reason": "within contract tolerance",
+      "status": "PASS"
+    }
+  ],
+  "created_utc": "2026-11-24T15:28:33.178399+00:00",
+  "details": {
+    "answer_sha256": "6620d07614d6ea17a292d2188321ec5bf445bd0048d28ed74ea2bf68c25372f6",
+    "backend": "decimal",
+    "canonical_dataset_contract_sha256": "1f06eb09849d1dd6a7bbaddd785c528cdb07aff71014957183674a028d57da34",
+    "case": "right",
+    "case_contract_sha256": "93d93b41cfb237d70486a5212831cf00c7d4aeae5f4db77f2c14b9d262234755",
+    "context": {
+      "month": "2026-04",
+      "population": "standard"
+    },
+    "grain": [
+      "population",
+      "month"
+    ],
+    "input_hashes": {
+      "expense": "9e46152d484adbfca8d1a7b5f5ba43ade7754c8764e20780222e437bedf2f0bd",
+      "revenue": "56506f25ff27e59fb1ba71725b0e0be1ec38af50104ba4bb11e6db63993c68f4"
+    },
+    "mapping_sha256": "8ae6b42087aad527b43c53a7c5fc0d35e48b79a4d4f8d2ff9cabe2d82dc3ad2d",
+    "metric": "total_expense",
+    "metric_contract_sha256": "440a13959e9bb009a25784cd182976da2aaadc1553c69ba1ef4b65f64e0b7fca",
+    "metric_version": "1.0.0",
+    "question_sha256": "bbd4ece27d789e6835eb0b1a508d57d11f3589bfdd31ddbd5ef03da509949900",
+    "reference": {
+      "components": {
+        "expense": {
+          "matching_rows": 3,
+          "non_null_rows": 3,
+          "period": "current",
+          "value": "100.00"
+        }
+      },
+      "reason": "reference calculated",
+      "status": "PASS",
+      "unit": "USD",
+      "value": "100.00"
+    },
+    "snapshot_sha256": "eb8bb7a5e8be40213877ae3a005f6681caa180535e6c4077dbc3f134c9cc326b",
+    "sources": {
+      "ledger": "a79f564c3c72c88881485f7d8bc109b0c2c13f63245d218f0bca20d676a51b37"
+    }
+  },
+  "environment": {
+    "packages": {
+      "duckdb": null,
+      "pillow": null,
+      "playwright": null,
+      "pyarrow": null,
+      "pydantic": "2.13.5",
+      "pytest": "9.1.1",
+      "pyyaml": "6.0.3"
+    },
+    "python": "3.13.15",
+    "system": "Windows-11-10.0.26200-SP0"
+  },
+  "kind": "answer",
+  "result_sha256": "252ab3600fa37c0b2964933e49f89ff24ec6d42c9373d70801db9c477c05b82e",
+  "run_id": "7f99247f73214e67b286ff61eb080a3d",
+  "schema_version": 1,
+  "summary": {
+    "assessable": 7,
+    "assessed_coverage": 1.0,
+    "counts": {
+      "ERROR": 0,
+      "FAIL": 0,
+      "INCONCLUSIVE": 0,
+      "NOT_APPLICABLE": 0,
+      "PASS": 7,
+      "REVIEW": 0
+    },
+    "exit_code": 0,
+    "in_scope": 7,
+    "numeric_accuracy": 1.0,
+    "numeric_assessable": 1,
+    "state": "COMPLETED",
+    "unresolved": []
+  }
+}

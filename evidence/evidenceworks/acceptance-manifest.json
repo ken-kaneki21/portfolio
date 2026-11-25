@@ -1,0 +1,231 @@
+{
+  "approvals": {
+    "human_metric_owner": null,
+    "human_ux_reviewers": 0,
+    "license": null,
+    "second_operator": null,
+    "tested_actor_type": "synthetic_test"
+  },
+  "artifacts": {
+    "answer-abstention.json": "356ef5639b9ab7832124810e5bb8d3404b97c951505e1cc49fd68757eabff1c9",
+    "answer-ambiguous.json": "00b04bd97cedee47c52ea677d80b543f61a575a46fefb09b5406686642f44b36",
+    "answer-causal.json": "56eed40ad9cb86e6c98eaf05d6fd4eee483f9893540c00f2f4bf246c48aea50a",
+    "answer-contradictory.json": "62d0deab885c9ae16b38137e55c90939062cf7bb81d2a6b206a6c27997b38116",
+    "answer-invented_evidence.json": "b002daae8f6450e41b4301f012f1db1e0cd4257c8be966b542d8d6d692f2177a",
+    "answer-missing_caveat.json": "7e3c1149c11ad95631b1d2e172f275a061a85d8e5a81f1dd354de3249207ebd8",
+    "answer-overconfidence.json": "f4c90edc7fcbb5b284d526e0b761cceb6bf56388bdcea032f27a1a5874a8c14f",
+    "answer-right.json": "6f2cfff9923ac9a17227f432638e262ed4ae9ba926c2147b8655baee0b9d5d6c",
+    "answer-wrong_amount.html": "53bce51c28b61a76741a78a7fd972b26802d20a46ef6e9bd0c1a99c41f8633a9",
+    "answer-wrong_amount.json": "4df5a5993fc3a4951b6a0550795070b7426ef2b67c265f0e329452f350f25e78",
+    "answer-wrong_period.json": "7ce5737a6b5f62d7b18cc64795576c22d04fe89e757d842ba12b3746e67f4a1e",
+    "answer-wrong_population.json": "9ae99ba7fc09cd69ba314785f049352b42405fd3fb6e051650f82eda9fb6efd7",
+    "answer-wrong_unit.json": "2026f6612ea8af8cfccca1ebed80460e15f2e040be97fad5d0914f7238a115ec",
+    "browser.json": "54c1b9142dd621cade5d1f22c6926c5203c2b3e06c9d59d60633720a5df63de7",
+    "candidate.png": "112d9c6c9e365ab8d3a494ff99f3df300c4ebc139bf0282d17324412092a8c34",
+    "dashboard-bad.html": "ecc53cd838ef861e675e3051714fbc92dbba4289e8de96fd88688e96fa668e24",
+    "dashboard-bad.json": "bf6f877985eec9057d86c04f7d871464f90af07f939bec39cbef7ff99e5afe8f",
+    "dashboard-good.json": "e549718b913c588afe890ca71b3da9307f6291cd033fe3353ba7a03094e36a3e",
+    "demo-assertions.csv": "bebdb7193f67b74015c3db9493bed573b5b95c720ac326d0d4de80f8afb2fb58",
+    "demo-report.html": "9b31de9ca324adef4f6a0431cc08471719c1c8f49d9014e2790aa1d31ce1ceab",
+    "demo-report.json": "307b16ccc6e641b62fde1f1cc0c34139cb45e890f264d11a9a119c8c0f32096d",
+    "filter-defect.png": "3d1fb1f6b1d07431b096cc14ea57a1c9e4048899673c9bdf9ce59c168f012796",
+    "layout-defect.png": "bf17367ed9378f871d5fcffe27c2f2cd181cfcd9c40ee6bddc28ad0a10ad405d",
+    "legacy-export.csv": "92e08462aee03a180b9163253babc4491a49909e95f987ff00df331a37479ee4",
+    "numeric-defect.png": "25f9995b675bd785eea7eca64f86122b5688ed8f1d8ce876be706d4e9857c218",
+    "repeat.png": "112d9c6c9e365ab8d3a494ff99f3df300c4ebc139bf0282d17324412092a8c34",
+    "synthetic_target_v1-visual-verification.json": "09384c03330e59be75ef91a371a7fee8b88a2cbfd6c363aa921778fecb7fba10",
+    "target-export.csv": "92e08462aee03a180b9163253babc4491a49909e95f987ff00df331a37479ee4",
+    "visual-layout-defect-difference.png": "dadfbf0f8fd5e18326a7fe6aa5d233c617910a91d3974106e36d338915207c35",
+    "visual-layout-defect.json": "b9ed7eab6bb3617098dc90f6a1ed7c5ff26b73a9fbf5c51ae1e1bec88eec63fd",
+    "visual-repeat-difference.png": "54ae98c25df6d55cda5e5ef421958bba276d6d22b0ee6a5825c1a2ff0cdb899f",
+    "visual-repeat.json": "3656110b55fafcd18f1d33217af74f6c1503151dc887fa4a3aa1d28d7f361446"
+  },
+  "backend": "decimal",
+  "blocked": [
+    "default DuckDB runtime and Parquet",
+    "native DuckDB external-access check",
+    "physical Windows junction",
+    "live loopback browser sockets",
+    "fresh default dependency installation",
+    "second-operator reproduction",
+    "real metric owner and baseline approvals",
+    "human UX calibration"
+  ],
+  "browser": {
+    "browser_manifest": "browser.json",
+    "live_loopback": "blocked",
+    "node": "24.14.0",
+    "package_playwright": "1.62.1",
+    "status": "PASS",
+    "visual_cli_exit_codes": {
+      "layout": 1,
+      "repeat": 0
+    },
+    "visual_manifest": "synthetic_target_v1-visual-verification.json",
+    "visual_runtime": {
+      "pillow": "13.0.0",
+      "python": "3.12.14"
+    }
+  },
+  "commands": {
+    "bootstrap": [
+      "pwsh",
+      "-NoProfile",
+      "-File",
+      "scripts/bootstrap.ps1",
+      "-Backend",
+      "decimal",
+      "-Wheelhouse",
+      "<locally reconstructed supported wheels>"
+    ],
+    "browser": [
+      "node",
+      "browser_tests/capture.cjs",
+      "<fresh-output>",
+      "<installed-chromium>",
+      "--intercept-loopback"
+    ],
+    "visual": [
+      "python",
+      "scripts/verify_visual.py",
+      "--workspace",
+      "<workspace>",
+      "--capture",
+      "<capture-path>",
+      "--scope",
+      "synthetic_target_v1"
+    ]
+  },
+  "demo": {
+    "command": [
+      "python.exe",
+      "-I",
+      "scripts/network_denied_run.py",
+      "--workspace",
+      "<acceptance-workspace>\\workspace",
+      "demo",
+      "--backend",
+      "decimal"
+    ],
+    "contract_hashes": {
+      "dataset_contract_sha256": "33886e9c635dadaeceb8368da023143b4b4b974b7c49643a9040477ea14a6912",
+      "metric_contract_sha256": "440a13959e9bb009a25784cd182976da2aaadc1553c69ba1ef4b65f64e0b7fca"
+    },
+    "elapsed_ms": 1737.148,
+    "environment": {
+      "packages": {
+        "duckdb": null,
+        "pillow": null,
+        "playwright": null,
+        "pyarrow": null,
+        "pydantic": "2.13.5",
+        "pytest": "9.1.1",
+        "pyyaml": "6.0.3"
+      },
+      "python": "3.13.15",
+      "system": "Windows-11-10.0.26200-SP0"
+    },
+    "exit_code": 0,
+    "input_manifest": {
+      "expense": {
+        "format": ".csv",
+        "rows": 15,
+        "sha256": "9e46152d484adbfca8d1a7b5f5ba43ade7754c8764e20780222e437bedf2f0bd"
+      },
+      "revenue": {
+        "format": ".csv",
+        "rows": 11,
+        "sha256": "56506f25ff27e59fb1ba71725b0e0be1ec38af50104ba4bb11e6db63993c68f4"
+      }
+    },
+    "report_sha256": "307b16ccc6e641b62fde1f1cc0c34139cb45e890f264d11a9a119c8c0f32096d",
+    "result": {
+      "elapsed_ms": 1264.414,
+      "report": "demo-report.json",
+      "result_sha256": "baffef76a9dcdc01a38a8d06efd0bf7b81109e1ffe4d302dc4a7aadbc6ce3264",
+      "run_id": "16d0b233151c46d3b832d6cd2b826b73",
+      "summary": {
+        "assessable": 38,
+        "assessed_coverage": 1.0,
+        "counts": {
+          "ERROR": 0,
+          "FAIL": 0,
+          "INCONCLUSIVE": 0,
+          "NOT_APPLICABLE": 0,
+          "PASS": 38,
+          "REVIEW": 0
+        },
+        "exit_code": 0,
+        "in_scope": 38,
+        "numeric_accuracy": null,
+        "numeric_assessable": 0,
+        "state": "COMPLETED",
+        "unresolved": []
+      }
+    }
+  },
+  "installation": {
+    "backend": "decimal",
+    "bootstrap_exit": 0,
+    "evidenceworks_wheel_sha256": "218417d893923c0075de52326c33d27bc07e4b687a8774d1db181e24cc85bde8",
+    "new_venv": true,
+    "pip_check_exit": 0,
+    "python": "3.13.15",
+    "source": "separately extracted complete source candidate",
+    "wheels": "14 locally reconstructed distributions, no index used"
+  },
+  "network": {
+    "browser": "live loopback socket blocked; Playwright fulfilled loopback routing passed",
+    "browser_external_navigation": "blocked by request routing",
+    "managed_external_socket_probe": "WinError 10013",
+    "python_audit_hook_guard_self_check": "denied before DNS"
+  },
+  "oracle": {
+    "backend": "decimal",
+    "detected_mutations": 6,
+    "hand_worked_cases": 24,
+    "labels": "assistant-authored",
+    "seed_range": [
+      881,
+      892
+    ],
+    "seeded_fraction_comparisons": 288
+  },
+  "os": "Windows-11-10.0.26200-SP0",
+  "package_source": {
+    "commit": "b2d4b77ca55e7e9ff6f59bc71ac189962b3972f7",
+    "dirty": false
+  },
+  "python": "3.13.15",
+  "source": {
+    "commit": "2956ce10795e1e0742f105635c2a02a1683ca9ab",
+    "dirty": false
+  },
+  "tests": {
+    "command": [
+      "python.exe",
+      "-m",
+      "pytest",
+      "-q",
+      "--junitxml=<acceptance-workspace>\\tests.xml"
+    ],
+    "counts": {
+      "errors": 0,
+      "failures": 0,
+      "passed": 45,
+      "skipped": 7,
+      "tests": 52
+    },
+    "elapsed_ms": 12827.334,
+    "exit_code": 0,
+    "skip_reasons": [
+      "DuckDB not acquired",
+      "DuckDB not acquired",
+      "DuckDB not acquired",
+      "DuckDB not acquired",
+      "junction creation unavailable",
+      "DuckDB not acquired",
+      "Pillow unavailable"
+    ]
+  }
+}

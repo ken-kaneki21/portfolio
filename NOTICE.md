@@ -1,0 +1,1 @@
+The MIT licence applies to the original portfolio UI source and its authored tooling. Third-party software keeps its original notices. Project evidence and reports are separate artifacts, and their project-source rights are unchanged.

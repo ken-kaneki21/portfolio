@@ -1,0 +1,10 @@
+{
+  "attempted_transport": "loopback-http",
+  "chrome": "157.0.8103.79",
+  "exit_code": 2,
+  "failure": "Chromium returned ERR_NETWORK_ACCESS_DENIED on first synthetic dashboard navigation",
+  "historical_intercepted_result": "browser.json",
+  "node": "24.14.0",
+  "playwright": "1.62.1",
+  "status": "ERROR"
+}

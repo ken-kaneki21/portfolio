@@ -1,0 +1,99 @@
+{
+  "assertions": [
+    {
+      "assertion": "claim_1.quote_span",
+      "reason": "mapped quote verified",
+      "status": "PASS"
+    },
+    {
+      "assertion": "claim_1.interpretation",
+      "reason": "manual mapping indicates ambiguity",
+      "status": "REVIEW"
+    },
+    {
+      "assertion": "response_completeness",
+      "reason": "no usable mapped quantitative claim or scoped abstention",
+      "status": "REVIEW"
+    }
+  ],
+  "created_utc": "2026-11-24T15:47:58.123342+00:00",
+  "details": {
+    "answer_sha256": "543b2aa20b4a11014d3b52b9c6d7df18e33bdd96fd4a4dfce0649290edf3f287",
+    "backend": "duckdb",
+    "canonical_dataset_contract_sha256": "1f06eb09849d1dd6a7bbaddd785c528cdb07aff71014957183674a028d57da34",
+    "case": "ambiguous",
+    "case_contract_sha256": "93d93b41cfb237d70486a5212831cf00c7d4aeae5f4db77f2c14b9d262234755",
+    "context": {
+      "month": "2026-04",
+      "population": "standard"
+    },
+    "grain": [
+      "population",
+      "month"
+    ],
+    "input_hashes": {
+      "expense": "9e46152d484adbfca8d1a7b5f5ba43ade7754c8764e20780222e437bedf2f0bd",
+      "revenue": "56506f25ff27e59fb1ba71725b0e0be1ec38af50104ba4bb11e6db63993c68f4"
+    },
+    "mapping_sha256": "72c1cf265f5db92d71d14bc7198f72b3ce474ae21d888b8ad42ba95fc83285a8",
+    "metric": "total_expense",
+    "metric_contract_sha256": "440a13959e9bb009a25784cd182976da2aaadc1553c69ba1ef4b65f64e0b7fca",
+    "metric_version": "1.0.0",
+    "reference": {
+      "components": {
+        "expense": {
+          "matching_rows": 3,
+          "non_null_rows": 3,
+          "period": "current",
+          "value": "100.00"
+        }
+      },
+      "reason": "reference calculated",
+      "status": "PASS",
+      "unit": "USD",
+      "value": "100.00"
+    },
+    "snapshot_sha256": "eb8bb7a5e8be40213877ae3a005f6681caa180535e6c4077dbc3f134c9cc326b",
+    "sources": {
+      "ledger": "a79f564c3c72c88881485f7d8bc109b0c2c13f63245d218f0bca20d676a51b37"
+    }
+  },
+  "environment": {
+    "packages": {
+      "duckdb": "1.4.4",
+      "pillow": "13.0.0",
+      "playwright": null,
+      "pyarrow": null,
+      "pydantic": "2.13.5",
+      "pytest": "9.1.1",
+      "pyyaml": "6.0.3"
+    },
+    "python": "3.13.15",
+    "system": "Windows-11-10.0.26200-SP0"
+  },
+  "kind": "answer",
+  "result_sha256": "104b4da6033efb119d80bc3827a25aec335d84f4ced33293186cf6211a73a333",
+  "run_id": "1c63473689bd48eabe3bff3b4720d2f6",
+  "schema_version": 1,
+  "summary": {
+    "assessable": 1,
+    "assessed_coverage": 0.3333333333333333,
+    "counts": {
+      "ERROR": 0,
+      "FAIL": 0,
+      "INCONCLUSIVE": 0,
+      "NOT_APPLICABLE": 0,
+      "PASS": 1,
+      "REVIEW": 2
+    },
+    "exit_code": 3,
+    "in_scope": 3,
+    "numeric_accuracy": null,
+    "numeric_assessable": 0,
+    "state": "UNRESOLVED",
+    "unresolved": [
+      "claim_1.interpretation",
+      "response_completeness"
+    ]
+  }
+}

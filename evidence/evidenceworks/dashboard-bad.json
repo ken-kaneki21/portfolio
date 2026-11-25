@@ -1,0 +1,241 @@
+{
+  "assertions": [
+    {
+      "actual": "99.00",
+      "assertion": "legacy_spend/target_spend.legacy",
+      "build": "synthetic_legacy_1",
+      "expected": "100.00",
+      "numeric": true,
+      "reason": "contradicts independent reference",
+      "status": "FAIL"
+    },
+    {
+      "actual": "99.00",
+      "assertion": "legacy_spend/target_spend.target",
+      "build": "synthetic_target_1",
+      "expected": "100.00",
+      "numeric": true,
+      "reason": "contradicts independent reference",
+      "status": "FAIL"
+    },
+    {
+      "actual": "50.00",
+      "assertion": "legacy_ratio/target_ratio.legacy",
+      "build": "synthetic_legacy_1",
+      "expected": "50.00",
+      "numeric": true,
+      "reason": "matches independent reference",
+      "status": "PASS"
+    },
+    {
+      "actual": "51.00",
+      "assertion": "legacy_ratio/target_ratio.target",
+      "build": "synthetic_target_1",
+      "expected": "50.00",
+      "numeric": true,
+      "reason": "contradicts independent reference",
+      "status": "FAIL"
+    },
+    {
+      "actual": "-9.00",
+      "assertion": "legacy_change/target_change.legacy",
+      "build": "synthetic_legacy_1",
+      "expected": "-10.00",
+      "numeric": true,
+      "reason": "contradicts independent reference",
+      "status": "FAIL"
+    },
+    {
+      "actual": "-10.00",
+      "assertion": "legacy_change/target_change.target",
+      "build": "synthetic_target_1",
+      "expected": "-10.00",
+      "numeric": true,
+      "reason": "matches independent reference",
+      "status": "PASS"
+    },
+    {
+      "actual": "-16.67",
+      "assertion": "legacy_relative/target_relative.legacy",
+      "build": "synthetic_legacy_1",
+      "expected": "-16.67",
+      "numeric": true,
+      "reason": "matches independent reference",
+      "status": "PASS"
+    },
+    {
+      "assertion": "legacy_relative/target_relative.target",
+      "build": "synthetic_target_1",
+      "reason": "incompatible filters",
+      "status": "FAIL"
+    }
+  ],
+  "created_utc": "2026-11-24T15:28:34.138192+00:00",
+  "details": {
+    "backend": "decimal",
+    "canonical_dataset_contract_sha256": "1f06eb09849d1dd6a7bbaddd785c528cdb07aff71014957183674a028d57da34",
+    "comparisons": [
+      {
+        "comparison": "both_incorrect",
+        "mapping": "legacy_spend/target_spend",
+        "metric": "total_expense",
+        "reference": {
+          "components": {
+            "expense": {
+              "matching_rows": 3,
+              "non_null_rows": 3,
+              "period": "current",
+              "value": "100.00"
+            }
+          },
+          "reason": "reference calculated",
+          "status": "PASS",
+          "unit": "USD",
+          "value": "100.00"
+        }
+      },
+      {
+        "comparison": "legacy_only_correct",
+        "mapping": "legacy_ratio/target_ratio",
+        "metric": "weighted_ratio",
+        "reference": {
+          "components": {
+            "expense": {
+              "matching_rows": 3,
+              "non_null_rows": 3,
+              "period": "current",
+              "value": "100.00"
+            },
+            "revenue": {
+              "matching_rows": 2,
+              "non_null_rows": 2,
+              "period": "current",
+              "value": "200.00"
+            }
+          },
+          "reason": "reference calculated",
+          "status": "PASS",
+          "unit": "percent",
+          "value": "50.00"
+        }
+      },
+      {
+        "comparison": "target_only_correct",
+        "mapping": "legacy_change/target_change",
+        "metric": "point_change",
+        "reference": {
+          "components": {
+            "expense": {
+              "matching_rows": 3,
+              "non_null_rows": 3,
+              "period": "current",
+              "value": "100.00"
+            },
+            "prior_expense": {
+              "matching_rows": 1,
+              "non_null_rows": 1,
+              "period": "previous",
+              "value": "60.00"
+            },
+            "prior_revenue": {
+              "matching_rows": 1,
+              "non_null_rows": 1,
+              "period": "previous",
+              "value": "100.00"
+            },
+            "revenue": {
+              "matching_rows": 2,
+              "non_null_rows": 2,
+              "period": "current",
+              "value": "200.00"
+            }
+          },
+          "reason": "reference calculated",
+          "status": "PASS",
+          "unit": "percentage_points",
+          "value": "-10.00"
+        }
+      },
+      {
+        "comparison": "incomparable",
+        "mapping": "legacy_relative/target_relative",
+        "metric": "relative_change",
+        "reference": {
+          "components": {
+            "expense": {
+              "matching_rows": 3,
+              "non_null_rows": 3,
+              "period": "current",
+              "value": "100.00"
+            },
+            "prior_expense": {
+              "matching_rows": 1,
+              "non_null_rows": 1,
+              "period": "previous",
+              "value": "60.00"
+            },
+            "prior_revenue": {
+              "matching_rows": 1,
+              "non_null_rows": 1,
+              "period": "previous",
+              "value": "100.00"
+            },
+            "revenue": {
+              "matching_rows": 2,
+              "non_null_rows": 2,
+              "period": "current",
+              "value": "200.00"
+            }
+          },
+          "reason": "reference calculated",
+          "status": "PASS",
+          "unit": "percent",
+          "value": "-16.67"
+        }
+      }
+    ],
+    "input_hashes": {
+      "expense": "9e46152d484adbfca8d1a7b5f5ba43ade7754c8764e20780222e437bedf2f0bd",
+      "revenue": "56506f25ff27e59fb1ba71725b0e0be1ec38af50104ba4bb11e6db63993c68f4"
+    },
+    "metric_contract_sha256": "440a13959e9bb009a25784cd182976da2aaadc1553c69ba1ef4b65f64e0b7fca",
+    "observations_sha256": "97d24a075301392af565abd0824aa1596822d1a79546224e4d352d3e8a018129",
+    "snapshot_sha256": "eb8bb7a5e8be40213877ae3a005f6681caa180535e6c4077dbc3f134c9cc326b",
+    "widget_contract_sha256": "005caee6b5b874a6a390197c169bfd4e4948c54831bfe34f99c218fca03f1d39"
+  },
+  "environment": {
+    "packages": {
+      "duckdb": null,
+      "pillow": null,
+      "playwright": null,
+      "pyarrow": null,
+      "pydantic": "2.13.5",
+      "pytest": "9.1.1",
+      "pyyaml": "6.0.3"
+    },
+    "python": "3.13.15",
+    "system": "Windows-11-10.0.26200-SP0"
+  },
+  "kind": "dashboard",
+  "result_sha256": "aef1801b5db4c0c94552c4d89f7d9841710096c58fb60e07d5835f1d532c527d",
+  "run_id": "bdf3f632abbd4051a888073f352a8656",
+  "schema_version": 1,
+  "summary": {
+    "assessable": 8,
+    "assessed_coverage": 1.0,
+    "counts": {
+      "ERROR": 0,
+      "FAIL": 5,
+      "INCONCLUSIVE": 0,
+      "NOT_APPLICABLE": 0,
+      "PASS": 3,
+      "REVIEW": 0
+    },
+    "exit_code": 1,
+    "in_scope": 8,
+    "numeric_accuracy": 0.42857142857142855,
+    "numeric_assessable": 7,
+    "state": "COMPLETED_WITH_FAILURES",
+    "unresolved": []
+  }
+}

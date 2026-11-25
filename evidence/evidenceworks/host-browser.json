@@ -1,0 +1,55 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "variant": "legacy",
+      "filters_reset_drilldown_empty_error_exports": "PASS"
+    },
+    {
+      "variant": "target",
+      "filters_reset_drilldown_empty_error_exports": "PASS"
+    }
+  ],
+  "images": {
+    "candidate.png": "112d9c6c9e365ab8d3a494ff99f3df300c4ebc139bf0282d17324412092a8c34",
+    "repeat.png": "112d9c6c9e365ab8d3a494ff99f3df300c4ebc139bf0282d17324412092a8c34",
+    "layout-defect.png": "bf17367ed9378f871d5fcffe27c2f2cd181cfcd9c40ee6bddc28ad0a10ad405d",
+    "numeric-defect.png": "25f9995b675bd785eea7eca64f86122b5688ed8f1d8ce876be706d4e9857c218",
+    "filter-defect.png": "3d1fb1f6b1d07431b096cc14ea57a1c9e4048899673c9bdf9ce59c168f012796"
+  },
+  "defects": {
+    "layout": {
+      "clipped": true,
+      "numeric_cents": 10000
+    },
+    "numeric": {
+      "expected_cents": 10000,
+      "rendered_cents": 10100
+    },
+    "filter": {
+      "expected_cents": 5000,
+      "rendered_cents": 10000
+    }
+  },
+  "environment": {
+    "browser_version": "157.0.8103.79",
+    "engine": "chromium",
+    "viewport": {
+      "width": 960,
+      "height": 760
+    },
+    "locale": "en-US",
+    "timezone_id": "UTC",
+    "device_scale_factor": 1,
+    "color_scheme": "light",
+    "reduced_motion": "reduce",
+    "font": "Arial, sans-serif",
+    "fixture_sha256": "ba8c00daac5496ff6c475ca102feeb29e25e3c69c48990d139b8b9d664d78360"
+  },
+  "network": {
+    "only_loopback": true,
+    "transport": "loopback-http",
+    "external_request_failed": true,
+    "route_denials": 1
+  }
+}

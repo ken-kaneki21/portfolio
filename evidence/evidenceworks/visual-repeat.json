@@ -1,0 +1,108 @@
+{
+  "assertions": [
+    {
+      "assertion": "visual_delta",
+      "reason": "within threshold",
+      "status": "PASS"
+    }
+  ],
+  "created_utc": "2026-11-24T15:27:38.099831+00:00",
+  "details": {
+    "approval": {
+      "actor": "synthetic-test:visual-harness",
+      "approval_kind": "synthetic_test",
+      "approved_utc": "2026-11-24T15:27:38.060191+00:00",
+      "environment_sha256": "74528596cbc5f16bd347832b50ad73db92ae1ce0ae79642e75167e7c06b22354",
+      "image_sha256": "112d9c6c9e365ab8d3a494ff99f3df300c4ebc139bf0282d17324412092a8c34",
+      "schema_version": 1,
+      "scope": "synthetic_target_v1"
+    },
+    "candidate_sha256": "112d9c6c9e365ab8d3a494ff99f3df300c4ebc139bf0282d17324412092a8c34",
+    "changed_fraction": 0.0,
+    "changed_pixels": 0,
+    "criterion": "fraction of RGB pixels with any changed channel",
+    "difference_sha256": "54ae98c25df6d55cda5e5ef421958bba276d6d22b0ee6a5825c1a2ff0cdb899f",
+    "human_review_queue": [
+      {
+        "criterion": "kpi_priority",
+        "evidence": null,
+        "score": null,
+        "status": "REVIEW"
+      },
+      {
+        "criterion": "label_clarity",
+        "evidence": null,
+        "score": null,
+        "status": "REVIEW"
+      },
+      {
+        "criterion": "chart_semantics",
+        "evidence": null,
+        "score": null,
+        "status": "REVIEW"
+      },
+      {
+        "criterion": "filter_clarity",
+        "evidence": null,
+        "score": null,
+        "status": "REVIEW"
+      },
+      {
+        "criterion": "layout_consistency",
+        "evidence": null,
+        "score": null,
+        "status": "REVIEW"
+      },
+      {
+        "criterion": "accessibility",
+        "evidence": null,
+        "score": null,
+        "status": "REVIEW"
+      },
+      {
+        "criterion": "error_states",
+        "evidence": null,
+        "score": null,
+        "status": "REVIEW"
+      }
+    ],
+    "scope": "synthetic_target_v1",
+    "threshold_fraction": "0.001",
+    "total_pixels": 729600
+  },
+  "environment": {
+    "packages": {
+      "duckdb": null,
+      "pillow": "13.0.0",
+      "playwright": null,
+      "pyarrow": null,
+      "pydantic": "2.14.3",
+      "pytest": null,
+      "pyyaml": "6.0.3"
+    },
+    "python": "3.12.14",
+    "system": "Windows-11-10.0.26200-SP0"
+  },
+  "kind": "visual",
+  "result_sha256": "ebc1d445430ba297368e708f048734061d578e42b9db449e0ee94d17bbd7a709",
+  "run_id": "d55045b397bc4dbab7a157d122be713f",
+  "schema_version": 1,
+  "summary": {
+    "assessable": 1,
+    "assessed_coverage": 1.0,
+    "counts": {
+      "ERROR": 0,
+      "FAIL": 0,
+      "INCONCLUSIVE": 0,
+      "NOT_APPLICABLE": 0,
+      "PASS": 1,
+      "REVIEW": 0
+    },
+    "exit_code": 0,
+    "in_scope": 1,
+    "numeric_accuracy": null,
+    "numeric_assessable": 0,
+    "state": "COMPLETED",
+    "unresolved": []
+  }
+}

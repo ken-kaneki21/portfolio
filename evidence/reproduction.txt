@@ -1,0 +1,11 @@
+Portfolio evidence reproduction
+
+Job Intelligence. Use the companion repository's experiments/retrieval.py with the pinned local encoder and the job repository at 3d3c02b. The command and fixture are in the sprint README. See the workflow report for the separately accepted Temporal and PostgreSQL replay.
+
+Healthcare Claims Platform. See docs/live-http-acceptance.md in the local source candidate at 8b5267c. Reproduce with the pinned llama.cpp image, signed-demo auth and synthetic fixture. The accepted HTTP evidence is downloadable on the project page.
+
+EvidenceWorks. The local source candidate's docs/operator_guide.md includes the pinned DuckDB host and browser verification commands. Source and licence review are pending before publication. The included dashboard is the synthetic demo.
+
+This site links local sanitized artifacts. No hosted service is required for the evidence links.
+
+The pretrained Qwen measurement is a separate raw native SSE workload. See QWEN_HTTP_HANDOFF.md in the candidate. For EvidenceWorks, open evidenceworks/index.html with its sibling reports intact.

@@ -1,0 +1,112 @@
+{
+  "assertions": [
+    {
+      "assertion": "claim_1.quote_span",
+      "reason": "mapped quote verified",
+      "status": "PASS"
+    },
+    {
+      "assertion": "claim_1.metric",
+      "reason": "metric identity",
+      "status": "PASS"
+    },
+    {
+      "assertion": "claim_1.context.month",
+      "reason": "context matches",
+      "status": "PASS"
+    },
+    {
+      "assertion": "claim_1.context.population",
+      "reason": "context matches",
+      "status": "PASS"
+    },
+    {
+      "assertion": "claim_1.abstention",
+      "reason": "appropriate abstention",
+      "status": "PASS"
+    }
+  ],
+  "created_utc": "2026-11-24T15:47:57.683983+00:00",
+  "details": {
+    "answer_sha256": "4d810bc8ad90fa4ee399afd4a27a6ac8ece9b1349032d75d47f1a7c9a37c80f9",
+    "backend": "duckdb",
+    "canonical_dataset_contract_sha256": "1f06eb09849d1dd6a7bbaddd785c528cdb07aff71014957183674a028d57da34",
+    "case": "abstention",
+    "case_contract_sha256": "93d93b41cfb237d70486a5212831cf00c7d4aeae5f4db77f2c14b9d262234755",
+    "context": {
+      "month": "2026-04",
+      "population": "zero"
+    },
+    "grain": [
+      "population",
+      "month"
+    ],
+    "input_hashes": {
+      "expense": "9e46152d484adbfca8d1a7b5f5ba43ade7754c8764e20780222e437bedf2f0bd",
+      "revenue": "56506f25ff27e59fb1ba71725b0e0be1ec38af50104ba4bb11e6db63993c68f4"
+    },
+    "mapping_sha256": "6e0516dba6b0a5773471ac411f3d80ded52704b722332f2e6704dd349b9286b6",
+    "metric": "weighted_ratio",
+    "metric_contract_sha256": "440a13959e9bb009a25784cd182976da2aaadc1553c69ba1ef4b65f64e0b7fca",
+    "metric_version": "1.0.0",
+    "reference": {
+      "components": {
+        "expense": {
+          "matching_rows": 1,
+          "non_null_rows": 1,
+          "period": "current",
+          "value": "5.00"
+        },
+        "revenue": {
+          "matching_rows": 1,
+          "non_null_rows": 1,
+          "period": "current",
+          "value": "0.00"
+        }
+      },
+      "reason": "zero denominator",
+      "status": "INCONCLUSIVE",
+      "unit": "percent",
+      "value": null
+    },
+    "snapshot_sha256": "eb8bb7a5e8be40213877ae3a005f6681caa180535e6c4077dbc3f134c9cc326b",
+    "sources": {
+      "ledger": "a79f564c3c72c88881485f7d8bc109b0c2c13f63245d218f0bca20d676a51b37"
+    }
+  },
+  "environment": {
+    "packages": {
+      "duckdb": "1.4.4",
+      "pillow": "13.0.0",
+      "playwright": null,
+      "pyarrow": null,
+      "pydantic": "2.13.5",
+      "pytest": "9.1.1",
+      "pyyaml": "6.0.3"
+    },
+    "python": "3.13.15",
+    "system": "Windows-11-10.0.26200-SP0"
+  },
+  "kind": "answer",
+  "result_sha256": "f3ababf69cb16d208e4fe3549f2c708a6c529cf838524cb632b1ac19500c376e",
+  "run_id": "70ca2a90855d4b65853682e6fb228dd9",
+  "schema_version": 1,
+  "summary": {
+    "assessable": 5,
+    "assessed_coverage": 1.0,
+    "counts": {
+      "ERROR": 0,
+      "FAIL": 0,
+      "INCONCLUSIVE": 0,
+      "NOT_APPLICABLE": 0,
+      "PASS": 5,
+      "REVIEW": 0
+    },
+    "exit_code": 0,
+    "in_scope": 5,
+    "numeric_accuracy": null,
+    "numeric_assessable": 0,
+    "state": "COMPLETED",
+    "unresolved": []
+  }
+}
