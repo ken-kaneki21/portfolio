@@ -1,0 +1,2027 @@
+{
+  "version": "synthetic-jd-extraction-v1",
+  "provenance": "Original synthetic assistant-authored inputs and labels. No external dataset or inherited dataset licence.",
+  "split_seeds": {
+    "base": 89,
+    "adapt": 218,
+    "holdout": 617
+  },
+  "rows": [
+    {
+      "id": "heading-01",
+      "split": "base",
+      "family": "heading",
+      "title": "Data Engineer",
+      "text": "Requirements:\nspark\nPreferred:\ndbt\nMinimum 3 years of experience.",
+      "expected": {
+        "required": [
+          "spark"
+        ],
+        "preferred": [
+          "dbt"
+        ],
+        "min_years": 3
+      }
+    },
+    {
+      "id": "heading-02",
+      "split": "base",
+      "family": "heading",
+      "title": "Backend Engineer",
+      "text": "Requirements:\npython\nPreferred:\nfastapi\nMinimum 5 years of experience.",
+      "expected": {
+        "required": [
+          "python"
+        ],
+        "preferred": [
+          "fastapi"
+        ],
+        "min_years": 5
+      }
+    },
+    {
+      "id": "heading-03",
+      "split": "base",
+      "family": "heading",
+      "title": "Backend Engineer",
+      "text": "Requirements:\nfastapi\nPreferred:\npostgresql\nMinimum 4 years of experience.",
+      "expected": {
+        "required": [
+          "fastapi"
+        ],
+        "preferred": [
+          "postgresql"
+        ],
+        "min_years": 4
+      }
+    },
+    {
+      "id": "heading-04",
+      "split": "base",
+      "family": "heading",
+      "title": "Data Engineer",
+      "text": "Requirements:\nspark\nPreferred:\nsql\nMinimum 5 years of experience.",
+      "expected": {
+        "required": [
+          "spark"
+        ],
+        "preferred": [
+          "sql"
+        ],
+        "min_years": 5
+      }
+    },
+    {
+      "id": "heading-05",
+      "split": "base",
+      "family": "heading",
+      "title": "AI Engineer",
+      "text": "Requirements:\npython\nPreferred:\nfastapi\nMinimum 3 years of experience.",
+      "expected": {
+        "required": [
+          "python"
+        ],
+        "preferred": [
+          "fastapi"
+        ],
+        "min_years": 3
+      }
+    },
+    {
+      "id": "heading-06",
+      "split": "base",
+      "family": "heading",
+      "title": "AI Engineer",
+      "text": "Requirements:\ndocker\nPreferred:\npython\nMinimum 4 years of experience.",
+      "expected": {
+        "required": [
+          "docker"
+        ],
+        "preferred": [
+          "python"
+        ],
+        "min_years": 4
+      }
+    },
+    {
+      "id": "heading-07",
+      "split": "base",
+      "family": "heading",
+      "title": "AI Engineer",
+      "text": "Requirements:\npython\nPreferred:\nspark\nMinimum 5 years of experience.",
+      "expected": {
+        "required": [
+          "python"
+        ],
+        "preferred": [
+          "spark"
+        ],
+        "min_years": 5
+      }
+    },
+    {
+      "id": "heading-08",
+      "split": "base",
+      "family": "heading",
+      "title": "Backend Engineer",
+      "text": "Requirements:\npython\nPreferred:\ndocker\nMinimum 4 years of experience.",
+      "expected": {
+        "required": [
+          "python"
+        ],
+        "preferred": [
+          "docker"
+        ],
+        "min_years": 4
+      }
+    },
+    {
+      "id": "heading-09",
+      "split": "base",
+      "family": "heading",
+      "title": "AI Engineer",
+      "text": "Requirements:\nsql\nPreferred:\nfastapi\nMinimum 2 years of experience.",
+      "expected": {
+        "required": [
+          "sql"
+        ],
+        "preferred": [
+          "fastapi"
+        ],
+        "min_years": 2
+      }
+    },
+    {
+      "id": "heading-10",
+      "split": "base",
+      "family": "heading",
+      "title": "Data Engineer",
+      "text": "Requirements:\nsql\nPreferred:\nspark\nMinimum 2 years of experience.",
+      "expected": {
+        "required": [
+          "sql"
+        ],
+        "preferred": [
+          "spark"
+        ],
+        "min_years": 2
+      }
+    },
+    {
+      "id": "heading-11",
+      "split": "base",
+      "family": "heading",
+      "title": "Data Engineer",
+      "text": "Requirements:\ndbt\nPreferred:\npython\nMinimum 4 years of experience.",
+      "expected": {
+        "required": [
+          "dbt"
+        ],
+        "preferred": [
+          "python"
+        ],
+        "min_years": 4
+      }
+    },
+    {
+      "id": "heading-12",
+      "split": "base",
+      "family": "heading",
+      "title": "AI Engineer",
+      "text": "Requirements:\nspark\nPreferred:\nfastapi\nMinimum 4 years of experience.",
+      "expected": {
+        "required": [
+          "spark"
+        ],
+        "preferred": [
+          "fastapi"
+        ],
+        "min_years": 4
+      }
+    },
+    {
+      "id": "heading-13",
+      "split": "base",
+      "family": "heading",
+      "title": "AI Engineer",
+      "text": "Requirements:\nfastapi\nPreferred:\ndocker\nMinimum 5 years of experience.",
+      "expected": {
+        "required": [
+          "fastapi"
+        ],
+        "preferred": [
+          "docker"
+        ],
+        "min_years": 5
+      }
+    },
+    {
+      "id": "heading-14",
+      "split": "base",
+      "family": "heading",
+      "title": "AI Engineer",
+      "text": "Requirements:\ndocker\nPreferred:\nsql\nMinimum 4 years of experience.",
+      "expected": {
+        "required": [
+          "docker"
+        ],
+        "preferred": [
+          "sql"
+        ],
+        "min_years": 4
+      }
+    },
+    {
+      "id": "heading-15",
+      "split": "base",
+      "family": "heading",
+      "title": "AI Engineer",
+      "text": "Requirements:\nfastapi\nPreferred:\nsql\nMinimum 3 years of experience.",
+      "expected": {
+        "required": [
+          "fastapi"
+        ],
+        "preferred": [
+          "sql"
+        ],
+        "min_years": 3
+      }
+    },
+    {
+      "id": "heading-16",
+      "split": "base",
+      "family": "heading",
+      "title": "Backend Engineer",
+      "text": "Requirements:\nfastapi\nPreferred:\npostgresql\nMinimum 3 years of experience.",
+      "expected": {
+        "required": [
+          "fastapi"
+        ],
+        "preferred": [
+          "postgresql"
+        ],
+        "min_years": 3
+      }
+    },
+    {
+      "id": "heading-17",
+      "split": "base",
+      "family": "heading",
+      "title": "Backend Engineer",
+      "text": "Requirements:\nsql\nPreferred:\npython\nMinimum 5 years of experience.",
+      "expected": {
+        "required": [
+          "sql"
+        ],
+        "preferred": [
+          "python"
+        ],
+        "min_years": 5
+      }
+    },
+    {
+      "id": "heading-18",
+      "split": "base",
+      "family": "heading",
+      "title": "Data Engineer",
+      "text": "Requirements:\ndbt\nPreferred:\nspark\nMinimum 4 years of experience.",
+      "expected": {
+        "required": [
+          "dbt"
+        ],
+        "preferred": [
+          "spark"
+        ],
+        "min_years": 4
+      }
+    },
+    {
+      "id": "heading-19",
+      "split": "base",
+      "family": "heading",
+      "title": "Data Engineer",
+      "text": "Requirements:\nspark\nPreferred:\nairflow\nMinimum 3 years of experience.",
+      "expected": {
+        "required": [
+          "spark"
+        ],
+        "preferred": [
+          "airflow"
+        ],
+        "min_years": 3
+      }
+    },
+    {
+      "id": "heading-20",
+      "split": "base",
+      "family": "heading",
+      "title": "Backend Engineer",
+      "text": "Requirements:\nsql\nPreferred:\ndocker\nMinimum 2 years of experience.",
+      "expected": {
+        "required": [
+          "sql"
+        ],
+        "preferred": [
+          "docker"
+        ],
+        "min_years": 2
+      }
+    },
+    {
+      "id": "heading-21",
+      "split": "base",
+      "family": "heading",
+      "title": "AI Engineer",
+      "text": "Requirements:\nfastapi\nPreferred:\nspark\nMinimum 4 years of experience.",
+      "expected": {
+        "required": [
+          "fastapi"
+        ],
+        "preferred": [
+          "spark"
+        ],
+        "min_years": 4
+      }
+    },
+    {
+      "id": "heading-22",
+      "split": "base",
+      "family": "heading",
+      "title": "Backend Engineer",
+      "text": "Requirements:\npython\nPreferred:\nsql\nMinimum 5 years of experience.",
+      "expected": {
+        "required": [
+          "python"
+        ],
+        "preferred": [
+          "sql"
+        ],
+        "min_years": 5
+      }
+    },
+    {
+      "id": "heading-23",
+      "split": "base",
+      "family": "heading",
+      "title": "Data Engineer",
+      "text": "Requirements:\ndbt\nPreferred:\nairflow\nMinimum 4 years of experience.",
+      "expected": {
+        "required": [
+          "dbt"
+        ],
+        "preferred": [
+          "airflow"
+        ],
+        "min_years": 4
+      }
+    },
+    {
+      "id": "heading-24",
+      "split": "base",
+      "family": "heading",
+      "title": "Data Engineer",
+      "text": "Requirements:\ndbt\nPreferred:\npython\nMinimum 5 years of experience.",
+      "expected": {
+        "required": [
+          "dbt"
+        ],
+        "preferred": [
+          "python"
+        ],
+        "min_years": 5
+      }
+    },
+    {
+      "id": "inline-01",
+      "split": "base",
+      "family": "inline",
+      "title": "Data Engineer",
+      "text": "Required: spark. Preferred: python. At least 5 years of experience.",
+      "expected": {
+        "required": [
+          "spark"
+        ],
+        "preferred": [
+          "python"
+        ],
+        "min_years": 5
+      }
+    },
+    {
+      "id": "inline-02",
+      "split": "base",
+      "family": "inline",
+      "title": "Data Engineer",
+      "text": "Required: python. Preferred: sql. At least 3 years of experience.",
+      "expected": {
+        "required": [
+          "python"
+        ],
+        "preferred": [
+          "sql"
+        ],
+        "min_years": 3
+      }
+    },
+    {
+      "id": "inline-03",
+      "split": "base",
+      "family": "inline",
+      "title": "Backend Engineer",
+      "text": "Required: sql. Preferred: python. At least 5 years of experience.",
+      "expected": {
+        "required": [
+          "sql"
+        ],
+        "preferred": [
+          "python"
+        ],
+        "min_years": 5
+      }
+    },
+    {
+      "id": "inline-04",
+      "split": "base",
+      "family": "inline",
+      "title": "Backend Engineer",
+      "text": "Required: fastapi. Preferred: sql. At least 3 years of experience.",
+      "expected": {
+        "required": [
+          "fastapi"
+        ],
+        "preferred": [
+          "sql"
+        ],
+        "min_years": 3
+      }
+    },
+    {
+      "id": "inline-05",
+      "split": "base",
+      "family": "inline",
+      "title": "AI Engineer",
+      "text": "Required: spark. Preferred: python. At least 2 years of experience.",
+      "expected": {
+        "required": [
+          "spark"
+        ],
+        "preferred": [
+          "python"
+        ],
+        "min_years": 2
+      }
+    },
+    {
+      "id": "inline-06",
+      "split": "base",
+      "family": "inline",
+      "title": "AI Engineer",
+      "text": "Required: python. Preferred: sql. At least 4 years of experience.",
+      "expected": {
+        "required": [
+          "python"
+        ],
+        "preferred": [
+          "sql"
+        ],
+        "min_years": 4
+      }
+    },
+    {
+      "id": "inline-07",
+      "split": "base",
+      "family": "inline",
+      "title": "Backend Engineer",
+      "text": "Required: docker. Preferred: postgresql. At least 5 years of experience.",
+      "expected": {
+        "required": [
+          "docker"
+        ],
+        "preferred": [
+          "postgresql"
+        ],
+        "min_years": 5
+      }
+    },
+    {
+      "id": "inline-08",
+      "split": "base",
+      "family": "inline",
+      "title": "Backend Engineer",
+      "text": "Required: docker. Preferred: fastapi. At least 4 years of experience.",
+      "expected": {
+        "required": [
+          "docker"
+        ],
+        "preferred": [
+          "fastapi"
+        ],
+        "min_years": 4
+      }
+    },
+    {
+      "id": "inline-09",
+      "split": "base",
+      "family": "inline",
+      "title": "Backend Engineer",
+      "text": "Required: python. Preferred: postgresql. At least 2 years of experience.",
+      "expected": {
+        "required": [
+          "python"
+        ],
+        "preferred": [
+          "postgresql"
+        ],
+        "min_years": 2
+      }
+    },
+    {
+      "id": "inline-10",
+      "split": "base",
+      "family": "inline",
+      "title": "Backend Engineer",
+      "text": "Required: docker. Preferred: sql. At least 3 years of experience.",
+      "expected": {
+        "required": [
+          "docker"
+        ],
+        "preferred": [
+          "sql"
+        ],
+        "min_years": 3
+      }
+    },
+    {
+      "id": "inline-11",
+      "split": "base",
+      "family": "inline",
+      "title": "Data Engineer",
+      "text": "Required: spark. Preferred: sql. At least 3 years of experience.",
+      "expected": {
+        "required": [
+          "spark"
+        ],
+        "preferred": [
+          "sql"
+        ],
+        "min_years": 3
+      }
+    },
+    {
+      "id": "inline-12",
+      "split": "base",
+      "family": "inline",
+      "title": "AI Engineer",
+      "text": "Required: sql. Preferred: fastapi. At least 5 years of experience.",
+      "expected": {
+        "required": [
+          "sql"
+        ],
+        "preferred": [
+          "fastapi"
+        ],
+        "min_years": 5
+      }
+    },
+    {
+      "id": "inline-13",
+      "split": "base",
+      "family": "inline",
+      "title": "Data Engineer",
+      "text": "Required: python. Preferred: airflow. At least 4 years of experience.",
+      "expected": {
+        "required": [
+          "python"
+        ],
+        "preferred": [
+          "airflow"
+        ],
+        "min_years": 4
+      }
+    },
+    {
+      "id": "inline-14",
+      "split": "base",
+      "family": "inline",
+      "title": "AI Engineer",
+      "text": "Required: sql. Preferred: fastapi. At least 4 years of experience.",
+      "expected": {
+        "required": [
+          "sql"
+        ],
+        "preferred": [
+          "fastapi"
+        ],
+        "min_years": 4
+      }
+    },
+    {
+      "id": "inline-15",
+      "split": "base",
+      "family": "inline",
+      "title": "Backend Engineer",
+      "text": "Required: fastapi. Preferred: docker. At least 2 years of experience.",
+      "expected": {
+        "required": [
+          "fastapi"
+        ],
+        "preferred": [
+          "docker"
+        ],
+        "min_years": 2
+      }
+    },
+    {
+      "id": "inline-16",
+      "split": "base",
+      "family": "inline",
+      "title": "AI Engineer",
+      "text": "Required: docker. Preferred: sql. At least 5 years of experience.",
+      "expected": {
+        "required": [
+          "docker"
+        ],
+        "preferred": [
+          "sql"
+        ],
+        "min_years": 5
+      }
+    },
+    {
+      "id": "inline-17",
+      "split": "base",
+      "family": "inline",
+      "title": "AI Engineer",
+      "text": "Required: python. Preferred: fastapi. At least 5 years of experience.",
+      "expected": {
+        "required": [
+          "python"
+        ],
+        "preferred": [
+          "fastapi"
+        ],
+        "min_years": 5
+      }
+    },
+    {
+      "id": "inline-18",
+      "split": "base",
+      "family": "inline",
+      "title": "AI Engineer",
+      "text": "Required: docker. Preferred: fastapi. At least 3 years of experience.",
+      "expected": {
+        "required": [
+          "docker"
+        ],
+        "preferred": [
+          "fastapi"
+        ],
+        "min_years": 3
+      }
+    },
+    {
+      "id": "inline-19",
+      "split": "base",
+      "family": "inline",
+      "title": "AI Engineer",
+      "text": "Required: spark. Preferred: fastapi. At least 3 years of experience.",
+      "expected": {
+        "required": [
+          "spark"
+        ],
+        "preferred": [
+          "fastapi"
+        ],
+        "min_years": 3
+      }
+    },
+    {
+      "id": "inline-20",
+      "split": "base",
+      "family": "inline",
+      "title": "AI Engineer",
+      "text": "Required: fastapi. Preferred: spark. At least 4 years of experience.",
+      "expected": {
+        "required": [
+          "fastapi"
+        ],
+        "preferred": [
+          "spark"
+        ],
+        "min_years": 4
+      }
+    },
+    {
+      "id": "inline-21",
+      "split": "base",
+      "family": "inline",
+      "title": "AI Engineer",
+      "text": "Required: python. Preferred: docker. At least 3 years of experience.",
+      "expected": {
+        "required": [
+          "python"
+        ],
+        "preferred": [
+          "docker"
+        ],
+        "min_years": 3
+      }
+    },
+    {
+      "id": "inline-22",
+      "split": "base",
+      "family": "inline",
+      "title": "Data Engineer",
+      "text": "Required: sql. Preferred: spark. At least 2 years of experience.",
+      "expected": {
+        "required": [
+          "sql"
+        ],
+        "preferred": [
+          "spark"
+        ],
+        "min_years": 2
+      }
+    },
+    {
+      "id": "inline-23",
+      "split": "base",
+      "family": "inline",
+      "title": "AI Engineer",
+      "text": "Required: sql. Preferred: docker. At least 2 years of experience.",
+      "expected": {
+        "required": [
+          "sql"
+        ],
+        "preferred": [
+          "docker"
+        ],
+        "min_years": 2
+      }
+    },
+    {
+      "id": "inline-24",
+      "split": "base",
+      "family": "inline",
+      "title": "AI Engineer",
+      "text": "Required: sql. Preferred: docker. At least 5 years of experience.",
+      "expected": {
+        "required": [
+          "sql"
+        ],
+        "preferred": [
+          "docker"
+        ],
+        "min_years": 5
+      }
+    },
+    {
+      "id": "bullets-01",
+      "split": "base",
+      "family": "bullets",
+      "title": "Data Engineer",
+      "text": "Required skills:\n- sql\nNice to have:\n- spark\nMinimum 4 years of experience.",
+      "expected": {
+        "required": [
+          "sql"
+        ],
+        "preferred": [
+          "spark"
+        ],
+        "min_years": 4
+      }
+    },
+    {
+      "id": "bullets-02",
+      "split": "base",
+      "family": "bullets",
+      "title": "Data Engineer",
+      "text": "Required skills:\n- spark\nNice to have:\n- airflow\nMinimum 3 years of experience.",
+      "expected": {
+        "required": [
+          "spark"
+        ],
+        "preferred": [
+          "airflow"
+        ],
+        "min_years": 3
+      }
+    },
+    {
+      "id": "bullets-03",
+      "split": "base",
+      "family": "bullets",
+      "title": "Backend Engineer",
+      "text": "Required skills:\n- sql\nNice to have:\n- docker\nMinimum 4 years of experience.",
+      "expected": {
+        "required": [
+          "sql"
+        ],
+        "preferred": [
+          "docker"
+        ],
+        "min_years": 4
+      }
+    },
+    {
+      "id": "bullets-04",
+      "split": "base",
+      "family": "bullets",
+      "title": "Backend Engineer",
+      "text": "Required skills:\n- docker\nNice to have:\n- fastapi\nMinimum 3 years of experience.",
+      "expected": {
+        "required": [
+          "docker"
+        ],
+        "preferred": [
+          "fastapi"
+        ],
+        "min_years": 3
+      }
+    },
+    {
+      "id": "bullets-05",
+      "split": "base",
+      "family": "bullets",
+      "title": "AI Engineer",
+      "text": "Required skills:\n- spark\nNice to have:\n- sql\nMinimum 5 years of experience.",
+      "expected": {
+        "required": [
+          "spark"
+        ],
+        "preferred": [
+          "sql"
+        ],
+        "min_years": 5
+      }
+    },
+    {
+      "id": "bullets-06",
+      "split": "base",
+      "family": "bullets",
+      "title": "AI Engineer",
+      "text": "Required skills:\n- python\nNice to have:\n- spark\nMinimum 2 years of experience.",
+      "expected": {
+        "required": [
+          "python"
+        ],
+        "preferred": [
+          "spark"
+        ],
+        "min_years": 2
+      }
+    },
+    {
+      "id": "bullets-07",
+      "split": "base",
+      "family": "bullets",
+      "title": "Data Engineer",
+      "text": "Required skills:\n- spark\nNice to have:\n- python\nMinimum 5 years of experience.",
+      "expected": {
+        "required": [
+          "spark"
+        ],
+        "preferred": [
+          "python"
+        ],
+        "min_years": 5
+      }
+    },
+    {
+      "id": "bullets-08",
+      "split": "base",
+      "family": "bullets",
+      "title": "Data Engineer",
+      "text": "Required skills:\n- spark\nNice to have:\n- dbt\nMinimum 5 years of experience.",
+      "expected": {
+        "required": [
+          "spark"
+        ],
+        "preferred": [
+          "dbt"
+        ],
+        "min_years": 5
+      }
+    },
+    {
+      "id": "bullets-09",
+      "split": "base",
+      "family": "bullets",
+      "title": "Backend Engineer",
+      "text": "Required skills:\n- postgresql\nNice to have:\n- fastapi\nMinimum 4 years of experience.",
+      "expected": {
+        "required": [
+          "postgresql"
+        ],
+        "preferred": [
+          "fastapi"
+        ],
+        "min_years": 4
+      }
+    },
+    {
+      "id": "bullets-10",
+      "split": "base",
+      "family": "bullets",
+      "title": "Data Engineer",
+      "text": "Required skills:\n- dbt\nNice to have:\n- sql\nMinimum 4 years of experience.",
+      "expected": {
+        "required": [
+          "dbt"
+        ],
+        "preferred": [
+          "sql"
+        ],
+        "min_years": 4
+      }
+    },
+    {
+      "id": "bullets-11",
+      "split": "base",
+      "family": "bullets",
+      "title": "Data Engineer",
+      "text": "Required skills:\n- dbt\nNice to have:\n- spark\nMinimum 4 years of experience.",
+      "expected": {
+        "required": [
+          "dbt"
+        ],
+        "preferred": [
+          "spark"
+        ],
+        "min_years": 4
+      }
+    },
+    {
+      "id": "bullets-12",
+      "split": "base",
+      "family": "bullets",
+      "title": "Backend Engineer",
+      "text": "Required skills:\n- python\nNice to have:\n- postgresql\nMinimum 4 years of experience.",
+      "expected": {
+        "required": [
+          "python"
+        ],
+        "preferred": [
+          "postgresql"
+        ],
+        "min_years": 4
+      }
+    },
+    {
+      "id": "bullets-13",
+      "split": "base",
+      "family": "bullets",
+      "title": "Backend Engineer",
+      "text": "Required skills:\n- python\nNice to have:\n- docker\nMinimum 4 years of experience.",
+      "expected": {
+        "required": [
+          "python"
+        ],
+        "preferred": [
+          "docker"
+        ],
+        "min_years": 4
+      }
+    },
+    {
+      "id": "bullets-14",
+      "split": "base",
+      "family": "bullets",
+      "title": "Data Engineer",
+      "text": "Required skills:\n- python\nNice to have:\n- dbt\nMinimum 2 years of experience.",
+      "expected": {
+        "required": [
+          "python"
+        ],
+        "preferred": [
+          "dbt"
+        ],
+        "min_years": 2
+      }
+    },
+    {
+      "id": "bullets-15",
+      "split": "base",
+      "family": "bullets",
+      "title": "AI Engineer",
+      "text": "Required skills:\n- python\nNice to have:\n- fastapi\nMinimum 4 years of experience.",
+      "expected": {
+        "required": [
+          "python"
+        ],
+        "preferred": [
+          "fastapi"
+        ],
+        "min_years": 4
+      }
+    },
+    {
+      "id": "bullets-16",
+      "split": "base",
+      "family": "bullets",
+      "title": "Backend Engineer",
+      "text": "Required skills:\n- sql\nNice to have:\n- docker\nMinimum 5 years of experience.",
+      "expected": {
+        "required": [
+          "sql"
+        ],
+        "preferred": [
+          "docker"
+        ],
+        "min_years": 5
+      }
+    },
+    {
+      "id": "bullets-17",
+      "split": "base",
+      "family": "bullets",
+      "title": "Data Engineer",
+      "text": "Required skills:\n- spark\nNice to have:\n- sql\nMinimum 2 years of experience.",
+      "expected": {
+        "required": [
+          "spark"
+        ],
+        "preferred": [
+          "sql"
+        ],
+        "min_years": 2
+      }
+    },
+    {
+      "id": "bullets-18",
+      "split": "base",
+      "family": "bullets",
+      "title": "Data Engineer",
+      "text": "Required skills:\n- airflow\nNice to have:\n- python\nMinimum 5 years of experience.",
+      "expected": {
+        "required": [
+          "airflow"
+        ],
+        "preferred": [
+          "python"
+        ],
+        "min_years": 5
+      }
+    },
+    {
+      "id": "bullets-19",
+      "split": "base",
+      "family": "bullets",
+      "title": "Data Engineer",
+      "text": "Required skills:\n- sql\nNice to have:\n- airflow\nMinimum 5 years of experience.",
+      "expected": {
+        "required": [
+          "sql"
+        ],
+        "preferred": [
+          "airflow"
+        ],
+        "min_years": 5
+      }
+    },
+    {
+      "id": "bullets-20",
+      "split": "base",
+      "family": "bullets",
+      "title": "Backend Engineer",
+      "text": "Required skills:\n- postgresql\nNice to have:\n- fastapi\nMinimum 5 years of experience.",
+      "expected": {
+        "required": [
+          "postgresql"
+        ],
+        "preferred": [
+          "fastapi"
+        ],
+        "min_years": 5
+      }
+    },
+    {
+      "id": "bullets-21",
+      "split": "base",
+      "family": "bullets",
+      "title": "Data Engineer",
+      "text": "Required skills:\n- spark\nNice to have:\n- airflow\nMinimum 4 years of experience.",
+      "expected": {
+        "required": [
+          "spark"
+        ],
+        "preferred": [
+          "airflow"
+        ],
+        "min_years": 4
+      }
+    },
+    {
+      "id": "bullets-22",
+      "split": "base",
+      "family": "bullets",
+      "title": "Backend Engineer",
+      "text": "Required skills:\n- python\nNice to have:\n- fastapi\nMinimum 3 years of experience.",
+      "expected": {
+        "required": [
+          "python"
+        ],
+        "preferred": [
+          "fastapi"
+        ],
+        "min_years": 3
+      }
+    },
+    {
+      "id": "bullets-23",
+      "split": "base",
+      "family": "bullets",
+      "title": "Data Engineer",
+      "text": "Required skills:\n- sql\nNice to have:\n- airflow\nMinimum 4 years of experience.",
+      "expected": {
+        "required": [
+          "sql"
+        ],
+        "preferred": [
+          "airflow"
+        ],
+        "min_years": 4
+      }
+    },
+    {
+      "id": "bullets-24",
+      "split": "base",
+      "family": "bullets",
+      "title": "Data Engineer",
+      "text": "Required skills:\n- sql\nNice to have:\n- spark\nMinimum 3 years of experience.",
+      "expected": {
+        "required": [
+          "sql"
+        ],
+        "preferred": [
+          "spark"
+        ],
+        "min_years": 3
+      }
+    },
+    {
+      "id": "priority-01",
+      "split": "adapt",
+      "family": "priority",
+      "title": "Backend Engineer",
+      "text": "Must have: fastapi. Desirable: python. Minimum of 4 years of experience.",
+      "expected": {
+        "required": [
+          "fastapi"
+        ],
+        "preferred": [
+          "python"
+        ],
+        "min_years": 4
+      }
+    },
+    {
+      "id": "priority-02",
+      "split": "adapt",
+      "family": "priority",
+      "title": "Backend Engineer",
+      "text": "Must have: fastapi. Desirable: postgresql. Minimum of 4 years of experience.",
+      "expected": {
+        "required": [
+          "fastapi"
+        ],
+        "preferred": [
+          "postgresql"
+        ],
+        "min_years": 4
+      }
+    },
+    {
+      "id": "priority-03",
+      "split": "adapt",
+      "family": "priority",
+      "title": "AI Engineer",
+      "text": "Must have: fastapi. Desirable: spark. Minimum of 5 years of experience.",
+      "expected": {
+        "required": [
+          "fastapi"
+        ],
+        "preferred": [
+          "spark"
+        ],
+        "min_years": 5
+      }
+    },
+    {
+      "id": "priority-04",
+      "split": "adapt",
+      "family": "priority",
+      "title": "Backend Engineer",
+      "text": "Must have: fastapi. Desirable: sql. Minimum of 5 years of experience.",
+      "expected": {
+        "required": [
+          "fastapi"
+        ],
+        "preferred": [
+          "sql"
+        ],
+        "min_years": 5
+      }
+    },
+    {
+      "id": "priority-05",
+      "split": "adapt",
+      "family": "priority",
+      "title": "Backend Engineer",
+      "text": "Must have: fastapi. Desirable: sql. Minimum of 3 years of experience.",
+      "expected": {
+        "required": [
+          "fastapi"
+        ],
+        "preferred": [
+          "sql"
+        ],
+        "min_years": 3
+      }
+    },
+    {
+      "id": "priority-06",
+      "split": "adapt",
+      "family": "priority",
+      "title": "Data Engineer",
+      "text": "Must have: airflow. Desirable: python. Minimum of 5 years of experience.",
+      "expected": {
+        "required": [
+          "airflow"
+        ],
+        "preferred": [
+          "python"
+        ],
+        "min_years": 5
+      }
+    },
+    {
+      "id": "priority-07",
+      "split": "adapt",
+      "family": "priority",
+      "title": "AI Engineer",
+      "text": "Must have: sql. Desirable: spark. Minimum of 2 years of experience.",
+      "expected": {
+        "required": [
+          "sql"
+        ],
+        "preferred": [
+          "spark"
+        ],
+        "min_years": 2
+      }
+    },
+    {
+      "id": "priority-08",
+      "split": "adapt",
+      "family": "priority",
+      "title": "AI Engineer",
+      "text": "Must have: docker. Desirable: fastapi. Minimum of 4 years of experience.",
+      "expected": {
+        "required": [
+          "docker"
+        ],
+        "preferred": [
+          "fastapi"
+        ],
+        "min_years": 4
+      }
+    },
+    {
+      "id": "priority-09",
+      "split": "adapt",
+      "family": "priority",
+      "title": "Data Engineer",
+      "text": "Must have: sql. Desirable: dbt. Minimum of 2 years of experience.",
+      "expected": {
+        "required": [
+          "sql"
+        ],
+        "preferred": [
+          "dbt"
+        ],
+        "min_years": 2
+      }
+    },
+    {
+      "id": "priority-10",
+      "split": "adapt",
+      "family": "priority",
+      "title": "AI Engineer",
+      "text": "Must have: fastapi. Desirable: spark. Minimum of 3 years of experience.",
+      "expected": {
+        "required": [
+          "fastapi"
+        ],
+        "preferred": [
+          "spark"
+        ],
+        "min_years": 3
+      }
+    },
+    {
+      "id": "priority-11",
+      "split": "adapt",
+      "family": "priority",
+      "title": "AI Engineer",
+      "text": "Must have: spark. Desirable: docker. Minimum of 5 years of experience.",
+      "expected": {
+        "required": [
+          "spark"
+        ],
+        "preferred": [
+          "docker"
+        ],
+        "min_years": 5
+      }
+    },
+    {
+      "id": "priority-12",
+      "split": "adapt",
+      "family": "priority",
+      "title": "Data Engineer",
+      "text": "Must have: airflow. Desirable: sql. Minimum of 2 years of experience.",
+      "expected": {
+        "required": [
+          "airflow"
+        ],
+        "preferred": [
+          "sql"
+        ],
+        "min_years": 2
+      }
+    },
+    {
+      "id": "priority-13",
+      "split": "adapt",
+      "family": "priority",
+      "title": "Data Engineer",
+      "text": "Must have: sql. Desirable: python. Minimum of 4 years of experience.",
+      "expected": {
+        "required": [
+          "sql"
+        ],
+        "preferred": [
+          "python"
+        ],
+        "min_years": 4
+      }
+    },
+    {
+      "id": "priority-14",
+      "split": "adapt",
+      "family": "priority",
+      "title": "Data Engineer",
+      "text": "Must have: python. Desirable: airflow. Minimum of 3 years of experience.",
+      "expected": {
+        "required": [
+          "python"
+        ],
+        "preferred": [
+          "airflow"
+        ],
+        "min_years": 3
+      }
+    },
+    {
+      "id": "priority-15",
+      "split": "adapt",
+      "family": "priority",
+      "title": "AI Engineer",
+      "text": "Must have: fastapi. Desirable: python. Minimum of 5 years of experience.",
+      "expected": {
+        "required": [
+          "fastapi"
+        ],
+        "preferred": [
+          "python"
+        ],
+        "min_years": 5
+      }
+    },
+    {
+      "id": "priority-16",
+      "split": "adapt",
+      "family": "priority",
+      "title": "Data Engineer",
+      "text": "Must have: airflow. Desirable: dbt. Minimum of 4 years of experience.",
+      "expected": {
+        "required": [
+          "airflow"
+        ],
+        "preferred": [
+          "dbt"
+        ],
+        "min_years": 4
+      }
+    },
+    {
+      "id": "priority-17",
+      "split": "adapt",
+      "family": "priority",
+      "title": "Backend Engineer",
+      "text": "Must have: postgresql. Desirable: docker. Minimum of 2 years of experience.",
+      "expected": {
+        "required": [
+          "postgresql"
+        ],
+        "preferred": [
+          "docker"
+        ],
+        "min_years": 2
+      }
+    },
+    {
+      "id": "priority-18",
+      "split": "adapt",
+      "family": "priority",
+      "title": "Data Engineer",
+      "text": "Must have: dbt. Desirable: sql. Minimum of 4 years of experience.",
+      "expected": {
+        "required": [
+          "dbt"
+        ],
+        "preferred": [
+          "sql"
+        ],
+        "min_years": 4
+      }
+    },
+    {
+      "id": "reverse-01",
+      "split": "adapt",
+      "family": "reverse",
+      "title": "Backend Engineer",
+      "text": "Nice to have: sql. Required: docker. At least 3 years of experience.",
+      "expected": {
+        "required": [
+          "docker"
+        ],
+        "preferred": [
+          "sql"
+        ],
+        "min_years": 3
+      }
+    },
+    {
+      "id": "reverse-02",
+      "split": "adapt",
+      "family": "reverse",
+      "title": "AI Engineer",
+      "text": "Nice to have: fastapi. Required: sql. At least 2 years of experience.",
+      "expected": {
+        "required": [
+          "sql"
+        ],
+        "preferred": [
+          "fastapi"
+        ],
+        "min_years": 2
+      }
+    },
+    {
+      "id": "reverse-03",
+      "split": "adapt",
+      "family": "reverse",
+      "title": "Backend Engineer",
+      "text": "Nice to have: python. Required: docker. At least 4 years of experience.",
+      "expected": {
+        "required": [
+          "docker"
+        ],
+        "preferred": [
+          "python"
+        ],
+        "min_years": 4
+      }
+    },
+    {
+      "id": "reverse-04",
+      "split": "adapt",
+      "family": "reverse",
+      "title": "Data Engineer",
+      "text": "Nice to have: dbt. Required: sql. At least 5 years of experience.",
+      "expected": {
+        "required": [
+          "sql"
+        ],
+        "preferred": [
+          "dbt"
+        ],
+        "min_years": 5
+      }
+    },
+    {
+      "id": "reverse-05",
+      "split": "adapt",
+      "family": "reverse",
+      "title": "Data Engineer",
+      "text": "Nice to have: sql. Required: dbt. At least 2 years of experience.",
+      "expected": {
+        "required": [
+          "dbt"
+        ],
+        "preferred": [
+          "sql"
+        ],
+        "min_years": 2
+      }
+    },
+    {
+      "id": "reverse-06",
+      "split": "adapt",
+      "family": "reverse",
+      "title": "AI Engineer",
+      "text": "Nice to have: python. Required: spark. At least 5 years of experience.",
+      "expected": {
+        "required": [
+          "spark"
+        ],
+        "preferred": [
+          "python"
+        ],
+        "min_years": 5
+      }
+    },
+    {
+      "id": "reverse-07",
+      "split": "adapt",
+      "family": "reverse",
+      "title": "Data Engineer",
+      "text": "Nice to have: spark. Required: python. At least 2 years of experience.",
+      "expected": {
+        "required": [
+          "python"
+        ],
+        "preferred": [
+          "spark"
+        ],
+        "min_years": 2
+      }
+    },
+    {
+      "id": "reverse-08",
+      "split": "adapt",
+      "family": "reverse",
+      "title": "Backend Engineer",
+      "text": "Nice to have: fastapi. Required: python. At least 4 years of experience.",
+      "expected": {
+        "required": [
+          "python"
+        ],
+        "preferred": [
+          "fastapi"
+        ],
+        "min_years": 4
+      }
+    },
+    {
+      "id": "reverse-09",
+      "split": "adapt",
+      "family": "reverse",
+      "title": "Data Engineer",
+      "text": "Nice to have: airflow. Required: spark. At least 2 years of experience.",
+      "expected": {
+        "required": [
+          "spark"
+        ],
+        "preferred": [
+          "airflow"
+        ],
+        "min_years": 2
+      }
+    },
+    {
+      "id": "reverse-10",
+      "split": "adapt",
+      "family": "reverse",
+      "title": "AI Engineer",
+      "text": "Nice to have: docker. Required: spark. At least 4 years of experience.",
+      "expected": {
+        "required": [
+          "spark"
+        ],
+        "preferred": [
+          "docker"
+        ],
+        "min_years": 4
+      }
+    },
+    {
+      "id": "reverse-11",
+      "split": "adapt",
+      "family": "reverse",
+      "title": "Backend Engineer",
+      "text": "Nice to have: postgresql. Required: sql. At least 3 years of experience.",
+      "expected": {
+        "required": [
+          "sql"
+        ],
+        "preferred": [
+          "postgresql"
+        ],
+        "min_years": 3
+      }
+    },
+    {
+      "id": "reverse-12",
+      "split": "adapt",
+      "family": "reverse",
+      "title": "Data Engineer",
+      "text": "Nice to have: airflow. Required: sql. At least 3 years of experience.",
+      "expected": {
+        "required": [
+          "sql"
+        ],
+        "preferred": [
+          "airflow"
+        ],
+        "min_years": 3
+      }
+    },
+    {
+      "id": "reverse-13",
+      "split": "adapt",
+      "family": "reverse",
+      "title": "Data Engineer",
+      "text": "Nice to have: dbt. Required: python. At least 2 years of experience.",
+      "expected": {
+        "required": [
+          "python"
+        ],
+        "preferred": [
+          "dbt"
+        ],
+        "min_years": 2
+      }
+    },
+    {
+      "id": "reverse-14",
+      "split": "adapt",
+      "family": "reverse",
+      "title": "Backend Engineer",
+      "text": "Nice to have: docker. Required: fastapi. At least 3 years of experience.",
+      "expected": {
+        "required": [
+          "fastapi"
+        ],
+        "preferred": [
+          "docker"
+        ],
+        "min_years": 3
+      }
+    },
+    {
+      "id": "reverse-15",
+      "split": "adapt",
+      "family": "reverse",
+      "title": "AI Engineer",
+      "text": "Nice to have: spark. Required: docker. At least 5 years of experience.",
+      "expected": {
+        "required": [
+          "docker"
+        ],
+        "preferred": [
+          "spark"
+        ],
+        "min_years": 5
+      }
+    },
+    {
+      "id": "reverse-16",
+      "split": "adapt",
+      "family": "reverse",
+      "title": "Data Engineer",
+      "text": "Nice to have: airflow. Required: dbt. At least 3 years of experience.",
+      "expected": {
+        "required": [
+          "dbt"
+        ],
+        "preferred": [
+          "airflow"
+        ],
+        "min_years": 3
+      }
+    },
+    {
+      "id": "reverse-17",
+      "split": "adapt",
+      "family": "reverse",
+      "title": "Backend Engineer",
+      "text": "Nice to have: sql. Required: postgresql. At least 5 years of experience.",
+      "expected": {
+        "required": [
+          "postgresql"
+        ],
+        "preferred": [
+          "sql"
+        ],
+        "min_years": 5
+      }
+    },
+    {
+      "id": "reverse-18",
+      "split": "adapt",
+      "family": "reverse",
+      "title": "AI Engineer",
+      "text": "Nice to have: spark. Required: fastapi. At least 5 years of experience.",
+      "expected": {
+        "required": [
+          "fastapi"
+        ],
+        "preferred": [
+          "spark"
+        ],
+        "min_years": 5
+      }
+    },
+    {
+      "id": "prose-01",
+      "split": "holdout",
+      "family": "prose",
+      "title": "AI Engineer",
+      "text": "spark is a plus. Candidates must know docker. Minimum 4 years of experience.",
+      "expected": {
+        "required": [
+          "docker"
+        ],
+        "preferred": [
+          "spark"
+        ],
+        "min_years": 4
+      }
+    },
+    {
+      "id": "prose-02",
+      "split": "holdout",
+      "family": "prose",
+      "title": "Backend Engineer",
+      "text": "postgresql is a plus. Candidates must know python. Minimum 2 years of experience.",
+      "expected": {
+        "required": [
+          "python"
+        ],
+        "preferred": [
+          "postgresql"
+        ],
+        "min_years": 2
+      }
+    },
+    {
+      "id": "prose-03",
+      "split": "holdout",
+      "family": "prose",
+      "title": "Backend Engineer",
+      "text": "fastapi is a plus. Candidates must know docker. Minimum 5 years of experience.",
+      "expected": {
+        "required": [
+          "docker"
+        ],
+        "preferred": [
+          "fastapi"
+        ],
+        "min_years": 5
+      }
+    },
+    {
+      "id": "prose-04",
+      "split": "holdout",
+      "family": "prose",
+      "title": "AI Engineer",
+      "text": "spark is a plus. Candidates must know fastapi. Minimum 5 years of experience.",
+      "expected": {
+        "required": [
+          "fastapi"
+        ],
+        "preferred": [
+          "spark"
+        ],
+        "min_years": 5
+      }
+    },
+    {
+      "id": "prose-05",
+      "split": "holdout",
+      "family": "prose",
+      "title": "AI Engineer",
+      "text": "sql is a plus. Candidates must know docker. Minimum 5 years of experience.",
+      "expected": {
+        "required": [
+          "docker"
+        ],
+        "preferred": [
+          "sql"
+        ],
+        "min_years": 5
+      }
+    },
+    {
+      "id": "prose-06",
+      "split": "holdout",
+      "family": "prose",
+      "title": "Data Engineer",
+      "text": "dbt is a plus. Candidates must know sql. Minimum 3 years of experience.",
+      "expected": {
+        "required": [
+          "sql"
+        ],
+        "preferred": [
+          "dbt"
+        ],
+        "min_years": 3
+      }
+    },
+    {
+      "id": "sections-01",
+      "split": "holdout",
+      "family": "sections",
+      "title": "AI Engineer",
+      "text": "Qualifications:\npython\nOptional:\nspark\nExperience: 3 years.",
+      "expected": {
+        "required": [
+          "python"
+        ],
+        "preferred": [
+          "spark"
+        ],
+        "min_years": 3
+      }
+    },
+    {
+      "id": "sections-02",
+      "split": "holdout",
+      "family": "sections",
+      "title": "Data Engineer",
+      "text": "Qualifications:\ndbt\nOptional:\nsql\nExperience: 4 years.",
+      "expected": {
+        "required": [
+          "dbt"
+        ],
+        "preferred": [
+          "sql"
+        ],
+        "min_years": 4
+      }
+    },
+    {
+      "id": "sections-03",
+      "split": "holdout",
+      "family": "sections",
+      "title": "Data Engineer",
+      "text": "Qualifications:\npython\nOptional:\nsql\nExperience: 2 years.",
+      "expected": {
+        "required": [
+          "python"
+        ],
+        "preferred": [
+          "sql"
+        ],
+        "min_years": 2
+      }
+    },
+    {
+      "id": "sections-04",
+      "split": "holdout",
+      "family": "sections",
+      "title": "AI Engineer",
+      "text": "Qualifications:\nfastapi\nOptional:\ndocker\nExperience: 4 years.",
+      "expected": {
+        "required": [
+          "fastapi"
+        ],
+        "preferred": [
+          "docker"
+        ],
+        "min_years": 4
+      }
+    },
+    {
+      "id": "sections-05",
+      "split": "holdout",
+      "family": "sections",
+      "title": "Data Engineer",
+      "text": "Qualifications:\ndbt\nOptional:\npython\nExperience: 3 years.",
+      "expected": {
+        "required": [
+          "dbt"
+        ],
+        "preferred": [
+          "python"
+        ],
+        "min_years": 3
+      }
+    },
+    {
+      "id": "sections-06",
+      "split": "holdout",
+      "family": "sections",
+      "title": "Data Engineer",
+      "text": "Qualifications:\nsql\nOptional:\nairflow\nExperience: 5 years.",
+      "expected": {
+        "required": [
+          "sql"
+        ],
+        "preferred": [
+          "airflow"
+        ],
+        "min_years": 5
+      }
+    },
+    {
+      "id": "contrast-01",
+      "split": "holdout",
+      "family": "contrast",
+      "title": "AI Engineer",
+      "text": "At least 4 years of experience. fastapi is required. sql is preferred.",
+      "expected": {
+        "required": [
+          "fastapi"
+        ],
+        "preferred": [
+          "sql"
+        ],
+        "min_years": 4
+      }
+    },
+    {
+      "id": "contrast-02",
+      "split": "holdout",
+      "family": "contrast",
+      "title": "Backend Engineer",
+      "text": "At least 3 years of experience. docker is required. python is preferred.",
+      "expected": {
+        "required": [
+          "docker"
+        ],
+        "preferred": [
+          "python"
+        ],
+        "min_years": 3
+      }
+    },
+    {
+      "id": "contrast-03",
+      "split": "holdout",
+      "family": "contrast",
+      "title": "Data Engineer",
+      "text": "At least 2 years of experience. airflow is required. dbt is preferred.",
+      "expected": {
+        "required": [
+          "airflow"
+        ],
+        "preferred": [
+          "dbt"
+        ],
+        "min_years": 2
+      }
+    },
+    {
+      "id": "contrast-04",
+      "split": "holdout",
+      "family": "contrast",
+      "title": "Data Engineer",
+      "text": "At least 5 years of experience. spark is required. sql is preferred.",
+      "expected": {
+        "required": [
+          "spark"
+        ],
+        "preferred": [
+          "sql"
+        ],
+        "min_years": 5
+      }
+    },
+    {
+      "id": "contrast-05",
+      "split": "holdout",
+      "family": "contrast",
+      "title": "Backend Engineer",
+      "text": "At least 3 years of experience. docker is required. postgresql is preferred.",
+      "expected": {
+        "required": [
+          "docker"
+        ],
+        "preferred": [
+          "postgresql"
+        ],
+        "min_years": 3
+      }
+    },
+    {
+      "id": "contrast-06",
+      "split": "holdout",
+      "family": "contrast",
+      "title": "AI Engineer",
+      "text": "At least 5 years of experience. docker is required. python is preferred.",
+      "expected": {
+        "required": [
+          "docker"
+        ],
+        "preferred": [
+          "python"
+        ],
+        "min_years": 5
+      }
+    }
+  ]
+}

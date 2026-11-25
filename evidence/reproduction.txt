@@ -1,11 +1,23 @@
-Portfolio evidence reproduction
+Evidence reproduction and actual source
 
-Job Intelligence. Use the companion repository's experiments/retrieval.py with the pinned local encoder and the job repository at 3d3c02b. The command and fixture are in the sprint README. See the workflow report for the separately accepted Temporal and PostgreSQL replay.
+The public portfolio repository includes experiments/README.md and the original
+synthetic experiment harnesses/fixtures, plus tools/run-qwen-http.ps1. Read their
+requirements and exact historical revisions; no model weights are redistributed.
 
-Healthcare Claims Platform. See docs/live-http-acceptance.md in the local source candidate at 8b5267c. Reproduce with the pinned llama.cpp image, signed-demo auth and synthetic fixture. The accepted HTTP evidence is downloadable on the project page.
+Healthcare: use the merged healthcare-claims-platform docs/live-http-acceptance.md
+for the separate signed-demo HTTP and independent SQL acceptance. The accepted
+historical report is healthcare-acceptance.json beside this file.
 
-EvidenceWorks. The local source candidate's docs/operator_guide.md includes the pinned DuckDB host and browser verification commands. Source and licence review are pending before publication. The included dashboard is the synthetic demo.
+Job Intelligence: use the merged job-portal docs/cached-stack-acceptance.md for
+cached ingestion and controlled Temporal restart. job-acceptance.json records the
+original host run; profile filtering was not a multi-account authorization test.
 
-This site links local sanitized artifacts. No hosted service is required for the evidence links.
+EvidenceWorks: use the generic source README and docs/operator_guide.md at
+https://github.com/ken-kaneki21/EvidenceWorks. The sibling evidenceworks/index.html
+preserves historical sanitized manifests and reports with unchanged hashes.
 
-The pretrained Qwen measurement is a separate raw native SSE workload. See QWEN_HTTP_HANDOFF.md in the candidate. For EvidenceWorks, open evidenceworks/index.html with its sibling reports intact.
+Qwen: qwen-http-benchmark.json is a separate real HTTP SSE workload. Client timing
+and server decode rates are distinct. The scratch-ASGI result is a different model
+and transport. Reproduction needs the licensed local artifacts, not a paid API.
+
+The website itself needs no hosted backend or model. Keep its static files together.

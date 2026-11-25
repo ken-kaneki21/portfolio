@@ -1,0 +1,393 @@
+{
+  "version": "synthetic-jd-retrieval-v1",
+  "provenance": "Original assistant-authored synthetic descriptions and labels. No publication or hiring records. Each organization/template family is illustrative and disjoint by split.",
+  "judgment": "Three profile intents. 3 direct task match, 2 useful adjacent match, 1 partial overlap, 0 unrelated. Graded relevance is independent of hard eligibility; ineligible rows get no gain when measuring useful retrieval. Manual reviewer pending.",
+  "queries": [
+    {
+      "id": "ai",
+      "text": "AI engineer building retrieval augmented generation, LLM quality evaluation, document embeddings and evidence citations",
+      "titles": [
+        "AI Engineer"
+      ],
+      "adjacent": [
+        "ML Engineer"
+      ],
+      "skills": [
+        "python",
+        "llm",
+        "retrieval",
+        "embeddings"
+      ]
+    },
+    {
+      "id": "data",
+      "text": "Data engineer building Snowflake SQL warehouses, dbt transformations, pipeline reconciliation and CDC",
+      "titles": [
+        "Data Engineer"
+      ],
+      "adjacent": [
+        "Analytics Engineer"
+      ],
+      "skills": [
+        "sql",
+        "snowflake",
+        "dbt",
+        "airflow"
+      ]
+    },
+    {
+      "id": "backend",
+      "text": "Backend engineer building reliable Python FastAPI services, PostgreSQL persistence and authenticated REST APIs",
+      "titles": [
+        "Backend Engineer"
+      ],
+      "adjacent": [
+        "Software Engineer"
+      ],
+      "skills": [
+        "python",
+        "fastapi",
+        "postgresql",
+        "docker"
+      ]
+    }
+  ],
+  "documents": [
+    {
+      "split": "dev",
+      "id": "d-llm1",
+      "family": "d-llm1",
+      "title": "AI Engineer",
+      "location": "Bengaluru",
+      "text": "LLM retrieval on embeddings and citations. Minimum 2 years of experience.",
+      "relevance": [
+        3,
+        0,
+        1
+      ],
+      "denied": null
+    },
+    {
+      "split": "dev",
+      "id": "d-llm2",
+      "family": "d-llm2",
+      "title": "ML Engineer",
+      "location": "Remote",
+      "text": "Rank search documents and evaluate a vector index. Minimum 3 years of experience.",
+      "relevance": [
+        2,
+        0,
+        0
+      ],
+      "denied": null
+    },
+    {
+      "split": "dev",
+      "id": "d-data1",
+      "family": "d-data1",
+      "title": "Data Engineer",
+      "location": "Bengaluru",
+      "text": "Snowflake ELT with dbt and reconciliation. Minimum 3 years of experience.",
+      "relevance": [
+        0,
+        3,
+        1
+      ],
+      "denied": null
+    },
+    {
+      "split": "dev",
+      "id": "d-data2",
+      "family": "d-data2",
+      "title": "Analytics Engineer",
+      "location": "India",
+      "text": "Audit warehouse SQL and dimensional models. Minimum 3 years of experience.",
+      "relevance": [
+        0,
+        2,
+        0
+      ],
+      "denied": null
+    },
+    {
+      "split": "dev",
+      "id": "d-api1",
+      "family": "d-api1",
+      "title": "Backend Engineer",
+      "location": "Bengaluru",
+      "text": "Python FastAPI endpoint delivery with PostgreSQL, auth and SQL migrations. Minimum 2 years of experience.",
+      "relevance": [
+        1,
+        0,
+        3
+      ],
+      "denied": null
+    },
+    {
+      "split": "dev",
+      "id": "d-api2",
+      "family": "d-api2",
+      "title": "Software Engineer",
+      "location": "Remote",
+      "text": "Instrument service APIs and reliable persistence with Python. Minimum 3 years of experience.",
+      "relevance": [
+        0,
+        0,
+        2
+      ],
+      "denied": null
+    },
+    {
+      "split": "dev",
+      "id": "d-denied1",
+      "family": "d-denied1",
+      "title": "Senior AI Engineer",
+      "location": "Bengaluru",
+      "text": "LLM retrieval and embeddings. Minimum 8 years of experience.",
+      "relevance": [
+        3,
+        0,
+        0
+      ],
+      "denied": "experience"
+    },
+    {
+      "split": "dev",
+      "id": "d-denied2",
+      "family": "d-denied2",
+      "title": "Data Engineer",
+      "location": "London",
+      "text": "dbt and warehouse SQL. Minimum 2 years of experience.",
+      "relevance": [
+        0,
+        3,
+        0
+      ],
+      "denied": "geography"
+    },
+    {
+      "split": "dev",
+      "id": "d-denied3",
+      "family": "d-denied3",
+      "title": "Engineering Manager",
+      "location": "Bengaluru",
+      "text": "Own backend APIs. Minimum 4 years of experience.",
+      "relevance": [
+        0,
+        0,
+        2
+      ],
+      "denied": "management"
+    },
+    {
+      "split": "test",
+      "id": "t-orchard",
+      "family": "t-orchard",
+      "title": "Applied AI Engineer",
+      "location": "Remote",
+      "text": "Ground answers in fetched policy passages. Measure citation correctness and compare semantic indexes. Minimum 2 years of experience.",
+      "relevance": [
+        3,
+        0,
+        1
+      ],
+      "denied": null
+    },
+    {
+      "split": "test",
+      "id": "t-cirrus",
+      "family": "t-cirrus",
+      "title": "AI Engineer",
+      "location": "Bengaluru",
+      "text": "Tune dense embeddings, document search and retrieval relevance with offline LLM evaluation. Minimum 3 years of experience.",
+      "relevance": [
+        3,
+        0,
+        1
+      ],
+      "denied": null
+    },
+    {
+      "split": "test",
+      "id": "t-pico",
+      "family": "t-pico",
+      "title": "ML Engineer",
+      "location": "India",
+      "text": "Maintain classifiers for ticket routing. Own Python training and time-sliced evaluation. Minimum 3 years of experience.",
+      "relevance": [
+        1,
+        0,
+        0
+      ],
+      "denied": null
+    },
+    {
+      "split": "test",
+      "id": "t-quartz",
+      "family": "t-quartz",
+      "title": "Data Engineer",
+      "location": "Bengaluru",
+      "text": "Build Snowflake SQL marts and dbt contracts, reconcile late arriving partition data. Minimum 2 years of experience.",
+      "relevance": [
+        0,
+        3,
+        1
+      ],
+      "denied": null
+    },
+    {
+      "split": "test",
+      "id": "t-fathom",
+      "family": "t-fathom",
+      "title": "Analytics Engineer",
+      "location": "Remote",
+      "text": "Clean dimensional warehouse tables and validate daily ledger totals. Minimum 3 years of experience.",
+      "relevance": [
+        0,
+        2,
+        0
+      ],
+      "denied": null
+    },
+    {
+      "split": "test",
+      "id": "t-caravan",
+      "family": "t-caravan",
+      "title": "Data Engineer",
+      "location": "India",
+      "text": "Maintain CDC ingestion, Airflow schedules and Spark workloads. Minimum 4 years of experience.",
+      "relevance": [
+        0,
+        2,
+        1
+      ],
+      "denied": null
+    },
+    {
+      "split": "test",
+      "id": "t-oak",
+      "family": "t-oak",
+      "title": "Backend Engineer",
+      "location": "Bengaluru",
+      "text": "Design Python FastAPI REST services, PostgreSQL persistence and guarded sessions. Minimum 3 years of experience.",
+      "relevance": [
+        1,
+        0,
+        3
+      ],
+      "denied": null
+    },
+    {
+      "split": "test",
+      "id": "t-orbit",
+      "family": "t-orbit",
+      "title": "Software Engineer",
+      "location": "Remote",
+      "text": "Build idempotent endpoints and asynchronous Python task queues. Minimum 2 years of experience.",
+      "relevance": [
+        0,
+        0,
+        2
+      ],
+      "denied": null
+    },
+    {
+      "split": "test",
+      "id": "t-slate",
+      "family": "t-slate",
+      "title": "Backend Engineer",
+      "location": "India",
+      "text": "Own Java service endpoints and schema migration. Minimum 2 years of experience.",
+      "relevance": [
+        0,
+        0,
+        1
+      ],
+      "denied": null
+    },
+    {
+      "split": "test",
+      "id": "t-alloy",
+      "family": "t-alloy",
+      "title": "AI Engineer",
+      "location": "Bengaluru",
+      "text": "Run grounded LLM retrieval and citation evaluation. Minimum 7 years of experience.",
+      "relevance": [
+        3,
+        0,
+        1
+      ],
+      "denied": "experience"
+    },
+    {
+      "split": "test",
+      "id": "t-tide",
+      "family": "t-tide",
+      "title": "Data Engineer",
+      "location": "Berlin",
+      "text": "Develop dbt and Snowflake reconciliation. Minimum 2 years of experience.",
+      "relevance": [
+        0,
+        3,
+        0
+      ],
+      "denied": "geography"
+    },
+    {
+      "split": "test",
+      "id": "t-harbour",
+      "family": "t-harbour",
+      "title": "Backend Manager",
+      "location": "Bengaluru",
+      "text": "Lead Python API and PostgreSQL teams. Minimum 3 years of experience.",
+      "relevance": [
+        0,
+        0,
+        3
+      ],
+      "denied": "management"
+    },
+    {
+      "split": "test",
+      "id": "t-petal",
+      "family": "t-petal",
+      "title": "Product Designer",
+      "location": "Remote",
+      "text": "Build visual prototypes and interview users. Minimum 2 years of experience.",
+      "relevance": [
+        0,
+        0,
+        0
+      ],
+      "denied": "role"
+    },
+    {
+      "split": "test",
+      "id": "t-bank",
+      "family": "t-bank",
+      "title": "Data Engineer",
+      "location": "Remote US only",
+      "text": "ETL for fraud features and Snowflake analytics. Minimum 2 years of experience.",
+      "relevance": [
+        0,
+        2,
+        0
+      ],
+      "denied": "geography"
+    },
+    {
+      "split": "test",
+      "id": "t-fable",
+      "family": "t-fable",
+      "title": "AI Engineer",
+      "location": "India",
+      "text": "Minimum 2 years of experience. Preferred: 7 years supporting Python. Build query routing and response evaluation.",
+      "relevance": [
+        2,
+        0,
+        0
+      ],
+      "denied": null
+    }
+  ]
+}

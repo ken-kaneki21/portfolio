@@ -1,0 +1,10 @@
+local/
+.env
+.env.*
+.venv/
+node_modules/
+__pycache__/
+*.pyc
+*.gguf
+*.safetensors
+*.onnx
